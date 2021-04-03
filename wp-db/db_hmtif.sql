@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 03, 2021 at 11:50 AM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.1.32
+-- Waktu pembuatan: 03 Apr 2021 pada 13.16
+-- Versi server: 10.4.6-MariaDB
+-- Versi PHP: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wp_commentmeta`
+-- Struktur dari tabel `wp_commentmeta`
 --
 
 CREATE TABLE `wp_commentmeta` (
@@ -38,7 +38,7 @@ CREATE TABLE `wp_commentmeta` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wp_comments`
+-- Struktur dari tabel `wp_comments`
 --
 
 CREATE TABLE `wp_comments` (
@@ -60,7 +60,7 @@ CREATE TABLE `wp_comments` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `wp_comments`
+-- Dumping data untuk tabel `wp_comments`
 --
 
 INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
@@ -69,7 +69,7 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wp_links`
+-- Struktur dari tabel `wp_links`
 --
 
 CREATE TABLE `wp_links` (
@@ -91,7 +91,7 @@ CREATE TABLE `wp_links` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wp_options`
+-- Struktur dari tabel `wp_options`
 --
 
 CREATE TABLE `wp_options` (
@@ -102,7 +102,7 @@ CREATE TABLE `wp_options` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `wp_options`
+-- Dumping data untuk tabel `wp_options`
 --
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
@@ -138,7 +138,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (30, 'hack_file', '0', 'yes'),
 (31, 'blog_charset', 'UTF-8', 'yes'),
 (32, 'moderation_keys', '', 'no'),
-(33, 'active_plugins', 'a:2:{i:0;s:23:\"elementor/elementor.php\";i:1;s:51:\"header-footer-elementor/header-footer-elementor.php\";}', 'yes'),
+(33, 'active_plugins', 'a:1:{i:0;s:23:\"elementor/elementor.php\";}', 'yes'),
 (34, 'category_base', '', 'yes'),
 (35, 'ping_sites', 'http://rpc.pingomatic.com/', 'yes'),
 (36, 'comment_max_links', '2', 'yes'),
@@ -182,8 +182,8 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (74, 'comment_order', 'asc', 'yes'),
 (75, 'sticky_posts', 'a:0:{}', 'yes'),
 (76, 'widget_categories', 'a:2:{i:2;a:4:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:12:\"hierarchical\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}', 'yes'),
-(77, 'widget_text', 'a:0:{}', 'yes'),
-(78, 'widget_rss', 'a:0:{}', 'yes'),
+(77, 'widget_text', 'a:2:{i:1;a:0:{}s:12:\"_multiwidget\";i:1;}', 'yes'),
+(78, 'widget_rss', 'a:2:{i:1;a:0:{}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (79, 'uninstall_plugins', 'a:1:{s:23:\"elementor/elementor.php\";a:2:{i:0;s:21:\"Elementor\\Maintenance\";i:1;s:9:\"uninstall\";}}', 'no'),
 (80, 'timezone_string', '', 'yes'),
 (81, 'page_for_posts', '0', 'yes'),
@@ -205,14 +205,14 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (97, 'auto_update_core_major', 'enabled', 'yes'),
 (98, 'initial_db_version', '49752', 'yes'),
 (99, 'wp_user_roles', 'a:5:{s:13:\"administrator\";a:2:{s:4:\"name\";s:13:\"Administrator\";s:12:\"capabilities\";a:61:{s:13:\"switch_themes\";b:1;s:11:\"edit_themes\";b:1;s:16:\"activate_plugins\";b:1;s:12:\"edit_plugins\";b:1;s:10:\"edit_users\";b:1;s:10:\"edit_files\";b:1;s:14:\"manage_options\";b:1;s:17:\"moderate_comments\";b:1;s:17:\"manage_categories\";b:1;s:12:\"manage_links\";b:1;s:12:\"upload_files\";b:1;s:6:\"import\";b:1;s:15:\"unfiltered_html\";b:1;s:10:\"edit_posts\";b:1;s:17:\"edit_others_posts\";b:1;s:20:\"edit_published_posts\";b:1;s:13:\"publish_posts\";b:1;s:10:\"edit_pages\";b:1;s:4:\"read\";b:1;s:8:\"level_10\";b:1;s:7:\"level_9\";b:1;s:7:\"level_8\";b:1;s:7:\"level_7\";b:1;s:7:\"level_6\";b:1;s:7:\"level_5\";b:1;s:7:\"level_4\";b:1;s:7:\"level_3\";b:1;s:7:\"level_2\";b:1;s:7:\"level_1\";b:1;s:7:\"level_0\";b:1;s:17:\"edit_others_pages\";b:1;s:20:\"edit_published_pages\";b:1;s:13:\"publish_pages\";b:1;s:12:\"delete_pages\";b:1;s:19:\"delete_others_pages\";b:1;s:22:\"delete_published_pages\";b:1;s:12:\"delete_posts\";b:1;s:19:\"delete_others_posts\";b:1;s:22:\"delete_published_posts\";b:1;s:20:\"delete_private_posts\";b:1;s:18:\"edit_private_posts\";b:1;s:18:\"read_private_posts\";b:1;s:20:\"delete_private_pages\";b:1;s:18:\"edit_private_pages\";b:1;s:18:\"read_private_pages\";b:1;s:12:\"delete_users\";b:1;s:12:\"create_users\";b:1;s:17:\"unfiltered_upload\";b:1;s:14:\"edit_dashboard\";b:1;s:14:\"update_plugins\";b:1;s:14:\"delete_plugins\";b:1;s:15:\"install_plugins\";b:1;s:13:\"update_themes\";b:1;s:14:\"install_themes\";b:1;s:11:\"update_core\";b:1;s:10:\"list_users\";b:1;s:12:\"remove_users\";b:1;s:13:\"promote_users\";b:1;s:18:\"edit_theme_options\";b:1;s:13:\"delete_themes\";b:1;s:6:\"export\";b:1;}}s:6:\"editor\";a:2:{s:4:\"name\";s:6:\"Editor\";s:12:\"capabilities\";a:34:{s:17:\"moderate_comments\";b:1;s:17:\"manage_categories\";b:1;s:12:\"manage_links\";b:1;s:12:\"upload_files\";b:1;s:15:\"unfiltered_html\";b:1;s:10:\"edit_posts\";b:1;s:17:\"edit_others_posts\";b:1;s:20:\"edit_published_posts\";b:1;s:13:\"publish_posts\";b:1;s:10:\"edit_pages\";b:1;s:4:\"read\";b:1;s:7:\"level_7\";b:1;s:7:\"level_6\";b:1;s:7:\"level_5\";b:1;s:7:\"level_4\";b:1;s:7:\"level_3\";b:1;s:7:\"level_2\";b:1;s:7:\"level_1\";b:1;s:7:\"level_0\";b:1;s:17:\"edit_others_pages\";b:1;s:20:\"edit_published_pages\";b:1;s:13:\"publish_pages\";b:1;s:12:\"delete_pages\";b:1;s:19:\"delete_others_pages\";b:1;s:22:\"delete_published_pages\";b:1;s:12:\"delete_posts\";b:1;s:19:\"delete_others_posts\";b:1;s:22:\"delete_published_posts\";b:1;s:20:\"delete_private_posts\";b:1;s:18:\"edit_private_posts\";b:1;s:18:\"read_private_posts\";b:1;s:20:\"delete_private_pages\";b:1;s:18:\"edit_private_pages\";b:1;s:18:\"read_private_pages\";b:1;}}s:6:\"author\";a:2:{s:4:\"name\";s:6:\"Author\";s:12:\"capabilities\";a:10:{s:12:\"upload_files\";b:1;s:10:\"edit_posts\";b:1;s:20:\"edit_published_posts\";b:1;s:13:\"publish_posts\";b:1;s:4:\"read\";b:1;s:7:\"level_2\";b:1;s:7:\"level_1\";b:1;s:7:\"level_0\";b:1;s:12:\"delete_posts\";b:1;s:22:\"delete_published_posts\";b:1;}}s:11:\"contributor\";a:2:{s:4:\"name\";s:11:\"Contributor\";s:12:\"capabilities\";a:5:{s:10:\"edit_posts\";b:1;s:4:\"read\";b:1;s:7:\"level_1\";b:1;s:7:\"level_0\";b:1;s:12:\"delete_posts\";b:1;}}s:10:\"subscriber\";a:2:{s:4:\"name\";s:10:\"Subscriber\";s:12:\"capabilities\";a:2:{s:4:\"read\";b:1;s:7:\"level_0\";b:1;}}}', 'yes'),
-(100, 'fresh_site', '1', 'yes'),
+(100, 'fresh_site', '0', 'yes'),
 (101, 'widget_search', 'a:2:{i:2;a:1:{s:5:\"title\";s:0:\"\";}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (102, 'widget_recent-posts', 'a:2:{i:2;a:2:{s:5:\"title\";s:0:\"\";s:6:\"number\";i:5;}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (103, 'widget_recent-comments', 'a:2:{i:2;a:2:{s:5:\"title\";s:0:\"\";s:6:\"number\";i:5;}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (104, 'widget_archives', 'a:2:{i:2;a:3:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (105, 'widget_meta', 'a:2:{i:2;a:1:{s:5:\"title\";s:0:\"\";}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (106, 'sidebars_widgets', 'a:3:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:13:\"array_version\";i:3;}', 'yes'),
-(107, 'cron', 'a:8:{i:1617445004;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1617484604;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1617527802;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1617527803;a:1:{s:30:\"wp_site_health_scheduled_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}i:1617527823;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1617527828;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1617528215;a:1:{s:28:\"elementor/tracker/send_event\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
+(107, 'cron', 'a:8:{i:1617452204;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1617484604;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1617527802;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1617527803;a:1:{s:30:\"wp_site_health_scheduled_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}i:1617527823;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1617527828;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1617528215;a:1:{s:28:\"elementor/tracker/send_event\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
 (108, 'widget_pages', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (109, 'widget_calendar', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (110, 'widget_media_audio', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
@@ -234,7 +234,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (131, '_site_transient_timeout_php_check_b3655adab148a1a6c8391bd3893ea554', '1618046228', 'no'),
 (132, '_site_transient_php_check_b3655adab148a1a6c8391bd3893ea554', 'a:5:{s:19:\"recommended_version\";s:3:\"7.4\";s:15:\"minimum_version\";s:6:\"5.6.20\";s:12:\"is_supported\";b:0;s:9:\"is_secure\";b:0;s:13:\"is_acceptable\";b:0;}', 'no'),
 (133, 'can_compress_scripts', '1', 'no'),
-(134, '_site_transient_timeout_community-events-d41d8cd98f00b204e9800998ecf8427e', '1617484630', 'no'),
+(134, '_site_transient_timeout_community-events-d41d8cd98f00b204e9800998ecf8427e', '1617487520', 'no'),
 (135, '_site_transient_community-events-d41d8cd98f00b204e9800998ecf8427e', 'a:4:{s:9:\"sandboxed\";b:0;s:5:\"error\";N;s:8:\"location\";a:1:{s:2:\"ip\";b:0;}s:6:\"events\";a:2:{i:0;a:10:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:48:\"Demo + Discussion group: Intro to Block Patterns\";s:3:\"url\";s:68:\"https://www.meetup.com/learn-wordpress-discussions/events/276945764/\";s:6:\"meetup\";s:27:\"Learn WordPress Discussions\";s:10:\"meetup_url\";s:51:\"https://www.meetup.com/learn-wordpress-discussions/\";s:4:\"date\";s:19:\"2021-04-07 07:00:00\";s:8:\"end_date\";s:19:\"2021-04-07 08:00:00\";s:20:\"start_unix_timestamp\";i:1617804000;s:18:\"end_unix_timestamp\";i:1617807600;s:8:\"location\";a:4:{s:8:\"location\";s:6:\"Online\";s:7:\"country\";s:2:\"US\";s:8:\"latitude\";d:37.779998779297;s:9:\"longitude\";d:-122.41999816895;}}i:1;a:10:{s:4:\"type\";s:8:\"wordcamp\";s:5:\"title\";s:23:\"WordCamp Centroamérica\";s:3:\"url\";s:40:\"https://centroamerica.wordcamp.org/2021/\";s:6:\"meetup\";N;s:10:\"meetup_url\";N;s:4:\"date\";s:19:\"2021-04-15 08:00:00\";s:8:\"end_date\";s:19:\"2021-04-17 00:00:00\";s:20:\"start_unix_timestamp\";i:1618495200;s:18:\"end_unix_timestamp\";i:1618639200;s:8:\"location\";a:4:{s:8:\"location\";s:6:\"Online\";s:7:\"country\";s:2:\"NI\";s:8:\"latitude\";d:12.1149926;s:9:\"longitude\";d:-86.2361744;}}}}', 'no'),
 (136, '_transient_timeout_feed_9bbd59226dc36b9b26cd43f15694c5c3', '1617484632', 'no');
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
@@ -251,10 +251,10 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (144, '_transient_timeout_dash_v2_88ae138922fe95674369b1cb3d215a2b', '1617484634', 'no'),
 (145, '_transient_dash_v2_88ae138922fe95674369b1cb3d215a2b', '<div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'https://wordpress.org/news/2021/03/so-you-want-to-make-block-patterns/\'>So you want to make block patterns?</a></li><li><a class=\'rsswidget\' href=\'https://wordpress.org/news/2021/03/talking-full-site-editing-with-matias-ventura/\'>WP Briefing: Talking Full Site Editing with Matías Ventura</a></li></ul></div><div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'https://wptavern.com/fsf-doubles-down-on-stallman-reinstatement-wordpress-does-not-support-his-return-to-the-board?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=fsf-doubles-down-on-stallman-reinstatement-wordpress-does-not-support-his-return-to-the-board\'>WPTavern: FSF Doubles Down on Stallman Reinstatement, WordPress Does Not Support His Return to the Board</a></li><li><a class=\'rsswidget\' href=\'https://wptavern.com/disable-the-wordpress-block-editors-fullscreen-mode-with-a-plugin?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=disable-the-wordpress-block-editors-fullscreen-mode-with-a-plugin\'>WPTavern: Disable the WordPress Block Editor’s Fullscreen Mode With a Plugin</a></li><li><a class=\'rsswidget\' href=\'https://wptavern.com/gutenberg-10-3-supports-default-image-sizes-continues-normalizing-toolbars-and-categorizes-theme-blocks?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=gutenberg-10-3-supports-default-image-sizes-continues-normalizing-toolbars-and-categorizes-theme-blocks\'>WPTavern: Gutenberg 10.3 Supports Default Image Sizes, Continues Normalizing Toolbars, and Categorizes Theme Blocks</a></li></ul></div>', 'no'),
 (148, 'finished_updating_comment_type', '1', 'yes'),
-(149, 'recently_activated', 'a:0:{}', 'yes'),
+(149, 'recently_activated', 'a:1:{s:51:\"header-footer-elementor/header-footer-elementor.php\";i:1617446565;}', 'yes'),
 (150, '_site_transient_timeout_poptags_40cd750bba9870f18aada2478b24840a', '1617452551', 'no'),
 (151, '_site_transient_poptags_40cd750bba9870f18aada2478b24840a', 'O:8:\"stdClass\":100:{s:11:\"woocommerce\";a:3:{s:4:\"name\";s:11:\"woocommerce\";s:4:\"slug\";s:11:\"woocommerce\";s:5:\"count\";i:4800;}s:6:\"widget\";a:3:{s:4:\"name\";s:6:\"widget\";s:4:\"slug\";s:6:\"widget\";s:5:\"count\";i:4753;}s:4:\"post\";a:3:{s:4:\"name\";s:4:\"post\";s:4:\"slug\";s:4:\"post\";s:5:\"count\";i:2716;}s:5:\"admin\";a:3:{s:4:\"name\";s:5:\"admin\";s:4:\"slug\";s:5:\"admin\";s:5:\"count\";i:2589;}s:5:\"posts\";a:3:{s:4:\"name\";s:5:\"posts\";s:4:\"slug\";s:5:\"posts\";s:5:\"count\";i:1997;}s:9:\"shortcode\";a:3:{s:4:\"name\";s:9:\"shortcode\";s:4:\"slug\";s:9:\"shortcode\";s:5:\"count\";i:1854;}s:8:\"comments\";a:3:{s:4:\"name\";s:8:\"comments\";s:4:\"slug\";s:8:\"comments\";s:5:\"count\";i:1828;}s:6:\"images\";a:3:{s:4:\"name\";s:6:\"images\";s:4:\"slug\";s:6:\"images\";s:5:\"count\";i:1507;}s:6:\"google\";a:3:{s:4:\"name\";s:6:\"google\";s:4:\"slug\";s:6:\"google\";s:5:\"count\";i:1505;}s:7:\"twitter\";a:3:{s:4:\"name\";s:7:\"twitter\";s:4:\"slug\";s:7:\"twitter\";s:5:\"count\";i:1497;}s:3:\"seo\";a:3:{s:4:\"name\";s:3:\"seo\";s:4:\"slug\";s:3:\"seo\";s:5:\"count\";i:1481;}s:5:\"image\";a:3:{s:4:\"name\";s:5:\"image\";s:4:\"slug\";s:5:\"image\";s:5:\"count\";i:1476;}s:8:\"facebook\";a:3:{s:4:\"name\";s:8:\"facebook\";s:4:\"slug\";s:8:\"facebook\";s:5:\"count\";i:1465;}s:7:\"sidebar\";a:3:{s:4:\"name\";s:7:\"sidebar\";s:4:\"slug\";s:7:\"sidebar\";s:5:\"count\";i:1310;}s:5:\"email\";a:3:{s:4:\"name\";s:5:\"email\";s:4:\"slug\";s:5:\"email\";s:5:\"count\";i:1253;}s:9:\"ecommerce\";a:3:{s:4:\"name\";s:9:\"ecommerce\";s:4:\"slug\";s:9:\"ecommerce\";s:5:\"count\";i:1227;}s:7:\"gallery\";a:3:{s:4:\"name\";s:7:\"gallery\";s:4:\"slug\";s:7:\"gallery\";s:5:\"count\";i:1224;}s:4:\"page\";a:3:{s:4:\"name\";s:4:\"page\";s:4:\"slug\";s:4:\"page\";s:5:\"count\";i:1151;}s:6:\"social\";a:3:{s:4:\"name\";s:6:\"social\";s:4:\"slug\";s:6:\"social\";s:5:\"count\";i:1122;}s:5:\"login\";a:3:{s:4:\"name\";s:5:\"login\";s:4:\"slug\";s:5:\"login\";s:5:\"count\";i:1046;}s:8:\"security\";a:3:{s:4:\"name\";s:8:\"security\";s:4:\"slug\";s:8:\"security\";s:5:\"count\";i:939;}s:5:\"video\";a:3:{s:4:\"name\";s:5:\"video\";s:4:\"slug\";s:5:\"video\";s:5:\"count\";i:927;}s:7:\"widgets\";a:3:{s:4:\"name\";s:7:\"widgets\";s:4:\"slug\";s:7:\"widgets\";s:5:\"count\";i:900;}s:5:\"links\";a:3:{s:4:\"name\";s:5:\"links\";s:4:\"slug\";s:5:\"links\";s:5:\"count\";i:884;}s:10:\"e-commerce\";a:3:{s:4:\"name\";s:10:\"e-commerce\";s:4:\"slug\";s:10:\"e-commerce\";s:5:\"count\";i:870;}s:4:\"spam\";a:3:{s:4:\"name\";s:4:\"spam\";s:4:\"slug\";s:4:\"spam\";s:5:\"count\";i:818;}s:6:\"slider\";a:3:{s:4:\"name\";s:6:\"slider\";s:4:\"slug\";s:6:\"slider\";s:5:\"count\";i:813;}s:7:\"content\";a:3:{s:4:\"name\";s:7:\"content\";s:4:\"slug\";s:7:\"content\";s:5:\"count\";i:802;}s:9:\"analytics\";a:3:{s:4:\"name\";s:9:\"analytics\";s:4:\"slug\";s:9:\"analytics\";s:5:\"count\";i:800;}s:4:\"form\";a:3:{s:4:\"name\";s:4:\"form\";s:4:\"slug\";s:4:\"form\";s:5:\"count\";i:778;}s:10:\"buddypress\";a:3:{s:4:\"name\";s:10:\"buddypress\";s:4:\"slug\";s:10:\"buddypress\";s:5:\"count\";i:760;}s:5:\"media\";a:3:{s:4:\"name\";s:5:\"media\";s:4:\"slug\";s:5:\"media\";s:5:\"count\";i:741;}s:3:\"rss\";a:3:{s:4:\"name\";s:3:\"rss\";s:4:\"slug\";s:3:\"rss\";s:5:\"count\";i:727;}s:6:\"search\";a:3:{s:4:\"name\";s:6:\"search\";s:4:\"slug\";s:6:\"search\";s:5:\"count\";i:719;}s:5:\"pages\";a:3:{s:4:\"name\";s:5:\"pages\";s:4:\"slug\";s:5:\"pages\";s:5:\"count\";i:714;}s:6:\"editor\";a:3:{s:4:\"name\";s:6:\"editor\";s:4:\"slug\";s:6:\"editor\";s:5:\"count\";i:706;}s:4:\"menu\";a:3:{s:4:\"name\";s:4:\"menu\";s:4:\"slug\";s:4:\"menu\";s:5:\"count\";i:675;}s:6:\"jquery\";a:3:{s:4:\"name\";s:6:\"jquery\";s:4:\"slug\";s:6:\"jquery\";s:5:\"count\";i:664;}s:4:\"feed\";a:3:{s:4:\"name\";s:4:\"feed\";s:4:\"slug\";s:4:\"feed\";s:5:\"count\";i:662;}s:7:\"payment\";a:3:{s:4:\"name\";s:7:\"payment\";s:4:\"slug\";s:7:\"payment\";s:5:\"count\";i:659;}s:8:\"category\";a:3:{s:4:\"name\";s:8:\"category\";s:4:\"slug\";s:8:\"category\";s:5:\"count\";i:657;}s:12:\"contact-form\";a:3:{s:4:\"name\";s:12:\"contact form\";s:4:\"slug\";s:12:\"contact-form\";s:5:\"count\";i:657;}s:5:\"embed\";a:3:{s:4:\"name\";s:5:\"embed\";s:4:\"slug\";s:5:\"embed\";s:5:\"count\";i:650;}s:4:\"ajax\";a:3:{s:4:\"name\";s:4:\"ajax\";s:4:\"slug\";s:4:\"ajax\";s:5:\"count\";i:644;}s:9:\"gutenberg\";a:3:{s:4:\"name\";s:9:\"gutenberg\";s:4:\"slug\";s:9:\"gutenberg\";s:5:\"count\";i:622;}s:7:\"youtube\";a:3:{s:4:\"name\";s:7:\"youtube\";s:4:\"slug\";s:7:\"youtube\";s:5:\"count\";i:596;}s:3:\"css\";a:3:{s:4:\"name\";s:3:\"css\";s:4:\"slug\";s:3:\"css\";s:5:\"count\";i:595;}s:15:\"payment-gateway\";a:3:{s:4:\"name\";s:15:\"payment gateway\";s:4:\"slug\";s:15:\"payment-gateway\";s:5:\"count\";i:591;}s:4:\"link\";a:3:{s:4:\"name\";s:4:\"link\";s:4:\"slug\";s:4:\"link\";s:5:\"count\";i:588;}s:10:\"javascript\";a:3:{s:4:\"name\";s:10:\"javascript\";s:4:\"slug\";s:10:\"javascript\";s:5:\"count\";i:587;}s:9:\"affiliate\";a:3:{s:4:\"name\";s:9:\"affiliate\";s:4:\"slug\";s:9:\"affiliate\";s:5:\"count\";i:573;}s:5:\"share\";a:3:{s:4:\"name\";s:5:\"share\";s:4:\"slug\";s:5:\"share\";s:5:\"count\";i:568;}s:10:\"responsive\";a:3:{s:4:\"name\";s:10:\"responsive\";s:4:\"slug\";s:10:\"responsive\";s:5:\"count\";i:564;}s:5:\"theme\";a:3:{s:4:\"name\";s:5:\"theme\";s:4:\"slug\";s:5:\"theme\";s:5:\"count\";i:560;}s:7:\"comment\";a:3:{s:4:\"name\";s:7:\"comment\";s:4:\"slug\";s:7:\"comment\";s:5:\"count\";i:557;}s:9:\"dashboard\";a:3:{s:4:\"name\";s:9:\"dashboard\";s:4:\"slug\";s:9:\"dashboard\";s:5:\"count\";i:555;}s:3:\"ads\";a:3:{s:4:\"name\";s:3:\"ads\";s:4:\"slug\";s:3:\"ads\";s:5:\"count\";i:542;}s:3:\"api\";a:3:{s:4:\"name\";s:3:\"api\";s:4:\"slug\";s:3:\"api\";s:5:\"count\";i:541;}s:7:\"contact\";a:3:{s:4:\"name\";s:7:\"contact\";s:4:\"slug\";s:7:\"contact\";s:5:\"count\";i:541;}s:6:\"custom\";a:3:{s:4:\"name\";s:6:\"custom\";s:4:\"slug\";s:6:\"custom\";s:5:\"count\";i:538;}s:10:\"categories\";a:3:{s:4:\"name\";s:10:\"categories\";s:4:\"slug\";s:10:\"categories\";s:5:\"count\";i:530;}s:4:\"user\";a:3:{s:4:\"name\";s:4:\"user\";s:4:\"slug\";s:4:\"user\";s:5:\"count\";i:515;}s:6:\"button\";a:3:{s:4:\"name\";s:6:\"button\";s:4:\"slug\";s:6:\"button\";s:5:\"count\";i:505;}s:4:\"tags\";a:3:{s:4:\"name\";s:4:\"tags\";s:4:\"slug\";s:4:\"tags\";s:5:\"count\";i:498;}s:6:\"events\";a:3:{s:4:\"name\";s:6:\"events\";s:4:\"slug\";s:6:\"events\";s:5:\"count\";i:496;}s:6:\"mobile\";a:3:{s:4:\"name\";s:6:\"mobile\";s:4:\"slug\";s:6:\"mobile\";s:5:\"count\";i:490;}s:5:\"users\";a:3:{s:4:\"name\";s:5:\"users\";s:4:\"slug\";s:5:\"users\";s:5:\"count\";i:487;}s:9:\"elementor\";a:3:{s:4:\"name\";s:9:\"elementor\";s:4:\"slug\";s:9:\"elementor\";s:5:\"count\";i:487;}s:9:\"marketing\";a:3:{s:4:\"name\";s:9:\"marketing\";s:4:\"slug\";s:9:\"marketing\";s:5:\"count\";i:485;}s:5:\"block\";a:3:{s:4:\"name\";s:5:\"block\";s:4:\"slug\";s:5:\"block\";s:5:\"count\";i:483;}s:4:\"chat\";a:3:{s:4:\"name\";s:4:\"chat\";s:4:\"slug\";s:4:\"chat\";s:5:\"count\";i:469;}s:5:\"popup\";a:3:{s:4:\"name\";s:5:\"popup\";s:4:\"slug\";s:5:\"popup\";s:5:\"count\";i:460;}s:8:\"calendar\";a:3:{s:4:\"name\";s:8:\"calendar\";s:4:\"slug\";s:8:\"calendar\";s:5:\"count\";i:455;}s:5:\"forms\";a:3:{s:4:\"name\";s:5:\"forms\";s:4:\"slug\";s:5:\"forms\";s:5:\"count\";i:450;}s:5:\"photo\";a:3:{s:4:\"name\";s:5:\"photo\";s:4:\"slug\";s:5:\"photo\";s:5:\"count\";i:445;}s:14:\"contact-form-7\";a:3:{s:4:\"name\";s:14:\"contact form 7\";s:4:\"slug\";s:14:\"contact-form-7\";s:5:\"count\";i:443;}s:10:\"navigation\";a:3:{s:4:\"name\";s:10:\"navigation\";s:4:\"slug\";s:10:\"navigation\";s:5:\"count\";i:442;}s:9:\"slideshow\";a:3:{s:4:\"name\";s:9:\"slideshow\";s:4:\"slug\";s:9:\"slideshow\";s:5:\"count\";i:441;}s:10:\"newsletter\";a:3:{s:4:\"name\";s:10:\"newsletter\";s:4:\"slug\";s:10:\"newsletter\";s:5:\"count\";i:440;}s:5:\"stats\";a:3:{s:4:\"name\";s:5:\"stats\";s:4:\"slug\";s:5:\"stats\";s:5:\"count\";i:432;}s:8:\"shipping\";a:3:{s:4:\"name\";s:8:\"shipping\";s:4:\"slug\";s:8:\"shipping\";s:5:\"count\";i:426;}s:6:\"photos\";a:3:{s:4:\"name\";s:6:\"photos\";s:4:\"slug\";s:6:\"photos\";s:5:\"count\";i:424;}s:10:\"statistics\";a:3:{s:4:\"name\";s:10:\"statistics\";s:4:\"slug\";s:10:\"statistics\";s:5:\"count\";i:418;}s:12:\"social-media\";a:3:{s:4:\"name\";s:12:\"social media\";s:4:\"slug\";s:12:\"social-media\";s:5:\"count\";i:406;}s:11:\"performance\";a:3:{s:4:\"name\";s:11:\"performance\";s:4:\"slug\";s:11:\"performance\";s:5:\"count\";i:406;}s:4:\"news\";a:3:{s:4:\"name\";s:4:\"news\";s:4:\"slug\";s:4:\"news\";s:5:\"count\";i:405;}s:8:\"redirect\";a:3:{s:4:\"name\";s:8:\"redirect\";s:4:\"slug\";s:8:\"redirect\";s:5:\"count\";i:404;}s:10:\"shortcodes\";a:3:{s:4:\"name\";s:10:\"shortcodes\";s:4:\"slug\";s:10:\"shortcodes\";s:5:\"count\";i:400;}s:4:\"code\";a:3:{s:4:\"name\";s:4:\"code\";s:4:\"slug\";s:4:\"code\";s:5:\"count\";i:391;}s:12:\"notification\";a:3:{s:4:\"name\";s:12:\"notification\";s:4:\"slug\";s:12:\"notification\";s:5:\"count\";i:390;}s:7:\"plugins\";a:3:{s:4:\"name\";s:7:\"plugins\";s:4:\"slug\";s:7:\"plugins\";s:5:\"count\";i:386;}s:3:\"url\";a:3:{s:4:\"name\";s:3:\"url\";s:4:\"slug\";s:3:\"url\";s:5:\"count\";i:380;}s:9:\"multisite\";a:3:{s:4:\"name\";s:9:\"multisite\";s:4:\"slug\";s:9:\"multisite\";s:5:\"count\";i:379;}s:4:\"meta\";a:3:{s:4:\"name\";s:4:\"meta\";s:4:\"slug\";s:4:\"meta\";s:5:\"count\";i:369;}s:8:\"tracking\";a:3:{s:4:\"name\";s:8:\"tracking\";s:4:\"slug\";s:8:\"tracking\";s:5:\"count\";i:368;}s:4:\"list\";a:3:{s:4:\"name\";s:4:\"list\";s:4:\"slug\";s:4:\"list\";s:5:\"count\";i:363;}s:6:\"import\";a:3:{s:4:\"name\";s:6:\"import\";s:4:\"slug\";s:6:\"import\";s:5:\"count\";i:362;}s:16:\"google-analytics\";a:3:{s:4:\"name\";s:16:\"google analytics\";s:4:\"slug\";s:16:\"google-analytics\";s:5:\"count\";i:357;}s:5:\"cache\";a:3:{s:4:\"name\";s:5:\"cache\";s:4:\"slug\";s:5:\"cache\";s:5:\"count\";i:353;}s:16:\"custom-post-type\";a:3:{s:4:\"name\";s:16:\"custom post type\";s:4:\"slug\";s:16:\"custom-post-type\";s:5:\"count\";i:346;}}', 'no'),
-(154, '_site_transient_update_plugins', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1617441884;s:8:\"response\";a:1:{s:19:\"akismet/akismet.php\";O:8:\"stdClass\":12:{s:2:\"id\";s:21:\"w.org/plugins/akismet\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:5:\"4.1.9\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/plugin/akismet.4.1.9.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";s:2:\"1x\";s:59:\"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:3:\"5.7\";s:12:\"requires_php\";b:0;s:13:\"compatibility\";O:8:\"stdClass\":0:{}}}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:3:{s:23:\"elementor/elementor.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:23:\"w.org/plugins/elementor\";s:4:\"slug\";s:9:\"elementor\";s:6:\"plugin\";s:23:\"elementor/elementor.php\";s:11:\"new_version\";s:5:\"3.1.4\";s:3:\"url\";s:40:\"https://wordpress.org/plugins/elementor/\";s:7:\"package\";s:58:\"https://downloads.wordpress.org/plugin/elementor.3.1.4.zip\";s:5:\"icons\";a:3:{s:2:\"2x\";s:62:\"https://ps.w.org/elementor/assets/icon-256x256.png?rev=1427768\";s:2:\"1x\";s:54:\"https://ps.w.org/elementor/assets/icon.svg?rev=1426809\";s:3:\"svg\";s:54:\"https://ps.w.org/elementor/assets/icon.svg?rev=1426809\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:65:\"https://ps.w.org/elementor/assets/banner-1544x500.png?rev=1475479\";s:2:\"1x\";s:64:\"https://ps.w.org/elementor/assets/banner-772x250.png?rev=1475479\";}s:11:\"banners_rtl\";a:0:{}}s:51:\"header-footer-elementor/header-footer-elementor.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:37:\"w.org/plugins/header-footer-elementor\";s:4:\"slug\";s:23:\"header-footer-elementor\";s:6:\"plugin\";s:51:\"header-footer-elementor/header-footer-elementor.php\";s:11:\"new_version\";s:5:\"1.5.8\";s:3:\"url\";s:54:\"https://wordpress.org/plugins/header-footer-elementor/\";s:7:\"package\";s:72:\"https://downloads.wordpress.org/plugin/header-footer-elementor.1.5.8.zip\";s:5:\"icons\";a:2:{s:2:\"1x\";s:68:\"https://ps.w.org/header-footer-elementor/assets/icon.svg?rev=2308485\";s:3:\"svg\";s:68:\"https://ps.w.org/header-footer-elementor/assets/icon.svg?rev=2308485\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:79:\"https://ps.w.org/header-footer-elementor/assets/banner-1544x500.jpg?rev=2308485\";s:2:\"1x\";s:78:\"https://ps.w.org/header-footer-elementor/assets/banner-772x250.jpg?rev=2308485\";}s:11:\"banners_rtl\";a:0:{}}s:9:\"hello.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:25:\"w.org/plugins/hello-dolly\";s:4:\"slug\";s:11:\"hello-dolly\";s:6:\"plugin\";s:9:\"hello.php\";s:11:\"new_version\";s:5:\"1.7.2\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/hello-dolly/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/hello-dolly.1.7.2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=2052855\";s:2:\"1x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=2052855\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:66:\"https://ps.w.org/hello-dolly/assets/banner-772x250.jpg?rev=2052855\";}s:11:\"banners_rtl\";a:0:{}}}}', 'no'),
+(154, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1617444729;s:7:\"checked\";a:4:{s:19:\"akismet/akismet.php\";s:5:\"4.1.7\";s:23:\"elementor/elementor.php\";s:5:\"3.1.4\";s:51:\"header-footer-elementor/header-footer-elementor.php\";s:5:\"1.5.8\";s:9:\"hello.php\";s:5:\"1.7.2\";}s:8:\"response\";a:1:{s:19:\"akismet/akismet.php\";O:8:\"stdClass\":12:{s:2:\"id\";s:21:\"w.org/plugins/akismet\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:5:\"4.1.9\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/plugin/akismet.4.1.9.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";s:2:\"1x\";s:59:\"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:3:\"5.7\";s:12:\"requires_php\";b:0;s:13:\"compatibility\";O:8:\"stdClass\":0:{}}}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:3:{s:23:\"elementor/elementor.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:23:\"w.org/plugins/elementor\";s:4:\"slug\";s:9:\"elementor\";s:6:\"plugin\";s:23:\"elementor/elementor.php\";s:11:\"new_version\";s:5:\"3.1.4\";s:3:\"url\";s:40:\"https://wordpress.org/plugins/elementor/\";s:7:\"package\";s:58:\"https://downloads.wordpress.org/plugin/elementor.3.1.4.zip\";s:5:\"icons\";a:3:{s:2:\"2x\";s:62:\"https://ps.w.org/elementor/assets/icon-256x256.png?rev=1427768\";s:2:\"1x\";s:54:\"https://ps.w.org/elementor/assets/icon.svg?rev=1426809\";s:3:\"svg\";s:54:\"https://ps.w.org/elementor/assets/icon.svg?rev=1426809\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:65:\"https://ps.w.org/elementor/assets/banner-1544x500.png?rev=1475479\";s:2:\"1x\";s:64:\"https://ps.w.org/elementor/assets/banner-772x250.png?rev=1475479\";}s:11:\"banners_rtl\";a:0:{}}s:51:\"header-footer-elementor/header-footer-elementor.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:37:\"w.org/plugins/header-footer-elementor\";s:4:\"slug\";s:23:\"header-footer-elementor\";s:6:\"plugin\";s:51:\"header-footer-elementor/header-footer-elementor.php\";s:11:\"new_version\";s:5:\"1.5.8\";s:3:\"url\";s:54:\"https://wordpress.org/plugins/header-footer-elementor/\";s:7:\"package\";s:72:\"https://downloads.wordpress.org/plugin/header-footer-elementor.1.5.8.zip\";s:5:\"icons\";a:2:{s:2:\"1x\";s:68:\"https://ps.w.org/header-footer-elementor/assets/icon.svg?rev=2308485\";s:3:\"svg\";s:68:\"https://ps.w.org/header-footer-elementor/assets/icon.svg?rev=2308485\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:79:\"https://ps.w.org/header-footer-elementor/assets/banner-1544x500.jpg?rev=2308485\";s:2:\"1x\";s:78:\"https://ps.w.org/header-footer-elementor/assets/banner-772x250.jpg?rev=2308485\";}s:11:\"banners_rtl\";a:0:{}}s:9:\"hello.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:25:\"w.org/plugins/hello-dolly\";s:4:\"slug\";s:11:\"hello-dolly\";s:6:\"plugin\";s:9:\"hello.php\";s:11:\"new_version\";s:5:\"1.7.2\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/hello-dolly/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/hello-dolly.1.7.2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=2052855\";s:2:\"1x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=2052855\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:66:\"https://ps.w.org/hello-dolly/assets/banner-772x250.jpg?rev=2052855\";}s:11:\"banners_rtl\";a:0:{}}}}', 'no'),
 (157, 'elementor_version', '3.1.4', 'yes'),
 (158, 'elementor_install_history', 'a:1:{s:5:\"3.1.4\";i:1617441816;}', 'yes'),
 (160, '_elementor_installed_time', '1617441820', 'yes');
@@ -268,7 +268,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (166, 'bsf_analytics_installed_time', '1617441826', 'no'),
 (168, '_site_transient_update_themes', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1617441948;s:7:\"checked\";a:4:{s:22:\"page-builder-framework\";s:5:\"2.6.4\";s:14:\"twentynineteen\";s:3:\"1.8\";s:12:\"twentytwenty\";s:3:\"1.6\";s:15:\"twentytwentyone\";s:3:\"1.0\";}s:8:\"response\";a:3:{s:14:\"twentynineteen\";a:6:{s:5:\"theme\";s:14:\"twentynineteen\";s:11:\"new_version\";s:3:\"2.0\";s:3:\"url\";s:44:\"https://wordpress.org/themes/twentynineteen/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/theme/twentynineteen.2.0.zip\";s:8:\"requires\";s:5:\"4.9.6\";s:12:\"requires_php\";s:5:\"5.2.4\";}s:12:\"twentytwenty\";a:6:{s:5:\"theme\";s:12:\"twentytwenty\";s:11:\"new_version\";s:3:\"1.7\";s:3:\"url\";s:42:\"https://wordpress.org/themes/twentytwenty/\";s:7:\"package\";s:58:\"https://downloads.wordpress.org/theme/twentytwenty.1.7.zip\";s:8:\"requires\";s:3:\"4.7\";s:12:\"requires_php\";s:5:\"5.2.4\";}s:15:\"twentytwentyone\";a:6:{s:5:\"theme\";s:15:\"twentytwentyone\";s:11:\"new_version\";s:3:\"1.2\";s:3:\"url\";s:45:\"https://wordpress.org/themes/twentytwentyone/\";s:7:\"package\";s:61:\"https://downloads.wordpress.org/theme/twentytwentyone.1.2.zip\";s:8:\"requires\";s:3:\"5.3\";s:12:\"requires_php\";s:3:\"5.6\";}}s:9:\"no_update\";a:1:{s:22:\"page-builder-framework\";a:6:{s:5:\"theme\";s:22:\"page-builder-framework\";s:11:\"new_version\";s:5:\"2.6.4\";s:3:\"url\";s:52:\"https://wordpress.org/themes/page-builder-framework/\";s:7:\"package\";s:70:\"https://downloads.wordpress.org/theme/page-builder-framework.2.6.4.zip\";s:8:\"requires\";b:0;s:12:\"requires_php\";s:3:\"5.6\";}}s:12:\"translations\";a:0:{}}', 'no'),
 (169, 'current_theme', 'Page Builder Framework', 'yes'),
-(170, 'theme_mods_page-builder-framework', 'a:3:{i:0;b:0;s:18:\"nav_menu_locations\";a:0:{}s:18:\"custom_css_post_id\";i:-1;}', 'yes'),
+(170, 'theme_mods_page-builder-framework', 'a:17:{i:0;b:0;s:18:\"nav_menu_locations\";a:1:{s:9:\"main_menu\";i:3;}s:18:\"custom_css_post_id\";i:-1;s:11:\"custom_logo\";i:9;s:14:\"menu_logo_size\";s:16:\"{\"desktop\":\"40\"}\";s:25:\"menu_logo_container_width\";s:2:\"10\";s:32:\"mobile_menu_logo_container_width\";s:2:\"67\";s:17:\"pre_header_layout\";s:4:\"none\";s:11:\"menu_height\";s:2:\"20\";s:13:\"menu_bg_color\";s:7:\"#ffffff\";s:15:\"menu_font_color\";s:16:\"rgba(0,0,0,0.48)\";s:19:\"menu_font_color_alt\";s:7:\"#000000\";s:14:\"sub_menu_width\";s:3:\"198\";s:21:\"sub_menu_accent_color\";s:7:\"#ffffff\";s:12:\"menu_padding\";s:2:\"20\";s:23:\"menu_font_family_toggle\";b:1;s:16:\"menu_font_family\";a:5:{s:11:\"font-family\";s:9:\"Open Sans\";s:7:\"variant\";s:7:\"regular\";s:11:\"font-backup\";s:0:\"\";s:11:\"font-weight\";i:400;s:10:\"font-style\";s:6:\"normal\";}}', 'yes'),
 (171, 'theme_switched', '', 'yes'),
 (172, '_site_transient_timeout_kirki_googlefonts_cache', '1617528348', 'no');
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
@@ -283,19 +283,32 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (181, 'elementor_notice', '', 'yes'),
 (182, 'elementor_css_print_method', 'external', 'yes'),
 (183, 'elementor_editor_break_lines', '', 'yes'),
-(184, 'elementor_unfiltered_files_upload', '', 'yes'),
+(184, 'elementor_unfiltered_files_upload', '1', 'yes'),
 (185, 'elementor_load_fa4_shim', '', 'yes'),
 (186, 'elementor_experiment-e_dom_optimization', 'default', 'yes'),
 (187, 'elementor_experiment-e_optimized_assets_loading', 'default', 'yes'),
 (188, 'elementor_experiment-a11y_improvements', 'default', 'yes'),
 (189, 'elementor_experiment-landing-pages', 'default', 'yes'),
 (190, '_transient_timeout_settings_errors', '1617442232', 'no'),
-(191, '_transient_settings_errors', 'a:1:{i:0;a:4:{s:7:\"setting\";s:7:\"general\";s:4:\"code\";s:16:\"settings_updated\";s:7:\"message\";s:15:\"Settings saved.\";s:4:\"type\";s:7:\"success\";}}', 'no');
+(191, '_transient_settings_errors', 'a:1:{i:0;a:4:{s:7:\"setting\";s:7:\"general\";s:4:\"code\";s:16:\"settings_updated\";s:7:\"message\";s:15:\"Settings saved.\";s:4:\"type\";s:7:\"success\";}}', 'no'),
+(192, '_elementor_global_css', 'a:6:{s:4:\"time\";i:1617444281;s:5:\"fonts\";a:0:{}s:5:\"icons\";a:0:{}s:20:\"dynamic_elements_ids\";a:0:{}s:6:\"status\";s:4:\"file\";i:0;b:0;}', 'yes'),
+(193, '_site_transient_timeout_browser_83f75fe8d5c2f40c243760c04f60cc4e', '1618049114', 'no'),
+(194, '_site_transient_browser_83f75fe8d5c2f40c243760c04f60cc4e', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:13:\"89.0.4389.114\";s:8:\"platform\";s:7:\"Windows\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
+(195, '_site_transient_timeout_php_check_a5b4d2808570efd012607394df5c6fa9', '1618049115', 'no'),
+(196, '_site_transient_php_check_a5b4d2808570efd012607394df5c6fa9', 'a:5:{s:19:\"recommended_version\";s:3:\"7.4\";s:15:\"minimum_version\";s:6:\"5.6.20\";s:12:\"is_supported\";b:1;s:9:\"is_secure\";b:1;s:13:\"is_acceptable\";b:1;}', 'no'),
+(197, 'elementor_scheme_color', 'a:4:{i:1;s:7:\"#6ec1e4\";i:2;s:7:\"#54595f\";i:3;s:7:\"#7a7a7a\";i:4;s:7:\"#61ce70\";}', 'yes'),
+(198, 'elementor_scheme_typography', 'a:4:{i:1;a:2:{s:11:\"font_family\";s:6:\"Roboto\";s:11:\"font_weight\";s:3:\"600\";}i:2;a:2:{s:11:\"font_family\";s:11:\"Roboto Slab\";s:11:\"font_weight\";s:3:\"400\";}i:3;a:2:{s:11:\"font_family\";s:6:\"Roboto\";s:11:\"font_weight\";s:3:\"400\";}i:4;a:2:{s:11:\"font_family\";s:6:\"Roboto\";s:11:\"font_weight\";s:3:\"500\";}}', 'yes'),
+(199, 'elementor_scheme_color-picker', 'a:8:{i:1;s:7:\"#6ec1e4\";i:2;s:7:\"#54595f\";i:3;s:7:\"#7a7a7a\";i:4;s:7:\"#61ce70\";i:5;s:7:\"#4054b2\";i:6;s:7:\"#23a455\";i:7;s:4:\"#000\";i:8;s:4:\"#fff\";}', 'yes'),
+(201, 'elementor_controls_usage', 'a:2:{s:7:\"wp-post\";a:4:{s:5:\"image\";a:2:{s:5:\"count\";i:1;s:8:\"controls\";a:2:{s:7:\"content\";a:1:{s:13:\"section_image\";a:3:{s:5:\"image\";i:1;s:10:\"image_size\";i:1;s:5:\"align\";i:1;}}s:5:\"style\";a:1:{s:19:\"section_style_image\";a:2:{s:5:\"width\";i:1;s:19:\"image_border_radius\";i:1;}}}}s:6:\"column\";a:2:{s:5:\"count\";i:3;s:8:\"controls\";a:1:{s:6:\"layout\";a:1:{s:6:\"layout\";a:1:{s:12:\"_inline_size\";i:3;}}}}s:15:\"navigation-menu\";a:2:{s:5:\"count\";i:1;s:8:\"controls\";a:1:{s:5:\"style\";a:1:{s:23:\"section_style_main-menu\";a:3:{s:26:\"menu_typography_typography\";i:1;s:27:\"menu_typography_font_family\";i:1;s:27:\"menu_typography_font_weight\";i:1;}}}}s:7:\"section\";a:2:{s:5:\"count\";i:2;s:8:\"controls\";a:1:{s:6:\"layout\";a:2:{s:14:\"section_layout\";a:2:{s:6:\"layout\";i:1;s:13:\"content_width\";i:1;}s:17:\"section_structure\";a:1:{s:9:\"structure\";i:1;}}}}}s:7:\"wp-page\";a:5:{s:7:\"heading\";a:2:{s:5:\"count\";i:8;s:8:\"controls\";a:2:{s:7:\"content\";a:1:{s:13:\"section_title\";a:4:{s:5:\"title\";i:8;s:4:\"size\";i:1;s:5:\"align\";i:1;s:11:\"header_size\";i:5;}}s:5:\"style\";a:1:{s:19:\"section_title_style\";a:6:{s:11:\"title_color\";i:7;s:21:\"typography_typography\";i:7;s:22:\"typography_font_family\";i:7;s:22:\"typography_font_weight\";i:7;s:20:\"typography_font_size\";i:5;s:22:\"typography_line_height\";i:1;}}}}s:6:\"column\";a:2:{s:5:\"count\";i:8;s:8:\"controls\";a:1:{s:6:\"layout\";a:1:{s:6:\"layout\";a:1:{s:12:\"_inline_size\";i:8;}}}}s:7:\"section\";a:2:{s:5:\"count\";i:4;s:8:\"controls\";a:1:{s:6:\"layout\";a:1:{s:17:\"section_structure\";a:1:{s:9:\"structure\";i:2;}}}}s:5:\"image\";a:2:{s:5:\"count\";i:1;s:8:\"controls\";a:1:{s:7:\"content\";a:1:{s:13:\"section_image\";a:2:{s:5:\"image\";i:1;s:10:\"image_size\";i:1;}}}}s:4:\"icon\";a:2:{s:5:\"count\";i:1;s:8:\"controls\";a:2:{s:7:\"content\";a:1:{s:12:\"section_icon\";a:2:{s:13:\"selected_icon\";i:1;s:5:\"align\";i:1;}}s:5:\"style\";a:1:{s:18:\"section_style_icon\";a:2:{s:13:\"primary_color\";i:1;s:4:\"size\";i:1;}}}}}}', 'no'),
+(202, 'nav_menu_options', 'a:2:{i:0;b:0;s:8:\"auto_add\";a:0:{}}', 'yes'),
+(205, '_transient_timeout_kirki_remote_url_contents', '1618051644', 'no'),
+(206, '_transient_kirki_remote_url_contents', 'a:1:{s:32:\"21158b71aa764c27f41d5e3af627bdb6\";s:2225:\"/* cyrillic-ext */\n@font-face {\n  font-family: \'Open Sans\';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWJ0df8pkAp6a.woff) format(\'woff\');\n  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\n}\n/* cyrillic */\n@font-face {\n  font-family: \'Open Sans\';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFUZ0df8pkAp6a.woff) format(\'woff\');\n  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\n}\n/* greek-ext */\n@font-face {\n  font-family: \'Open Sans\';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWZ0df8pkAp6a.woff) format(\'woff\');\n  unicode-range: U+1F00-1FFF;\n}\n/* greek */\n@font-face {\n  font-family: \'Open Sans\';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVp0df8pkAp6a.woff) format(\'woff\');\n  unicode-range: U+0370-03FF;\n}\n/* vietnamese */\n@font-face {\n  font-family: \'Open Sans\';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWp0df8pkAp6a.woff) format(\'woff\');\n  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;\n}\n/* latin-ext */\n@font-face {\n  font-family: \'Open Sans\';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFW50df8pkAp6a.woff) format(\'woff\');\n  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n/* latin */\n@font-face {\n  font-family: \'Open Sans\';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0df8pkAg.woff) format(\'woff\');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\";}', 'no'),
+(207, 'kirki_downloaded_font_files', 'a:7:{s:78:\"https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWJ0df8pkAp6a.woff\";s:86:\"C:\\xampp\\htdocs\\hmtif/wp-content/fonts/open-sans/mem8YaGs126MiZpBA-UFWJ0df8pkAp6a.woff\";s:78:\"https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFUZ0df8pkAp6a.woff\";s:86:\"C:\\xampp\\htdocs\\hmtif/wp-content/fonts/open-sans/mem8YaGs126MiZpBA-UFUZ0df8pkAp6a.woff\";s:78:\"https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWZ0df8pkAp6a.woff\";s:86:\"C:\\xampp\\htdocs\\hmtif/wp-content/fonts/open-sans/mem8YaGs126MiZpBA-UFWZ0df8pkAp6a.woff\";s:78:\"https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVp0df8pkAp6a.woff\";s:86:\"C:\\xampp\\htdocs\\hmtif/wp-content/fonts/open-sans/mem8YaGs126MiZpBA-UFVp0df8pkAp6a.woff\";s:78:\"https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWp0df8pkAp6a.woff\";s:86:\"C:\\xampp\\htdocs\\hmtif/wp-content/fonts/open-sans/mem8YaGs126MiZpBA-UFWp0df8pkAp6a.woff\";s:78:\"https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFW50df8pkAp6a.woff\";s:86:\"C:\\xampp\\htdocs\\hmtif/wp-content/fonts/open-sans/mem8YaGs126MiZpBA-UFW50df8pkAp6a.woff\";s:76:\"https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0df8pkAg.woff\";s:84:\"C:\\xampp\\htdocs\\hmtif/wp-content/fonts/open-sans/mem8YaGs126MiZpBA-UFVZ0df8pkAg.woff\";}', 'yes');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wp_postmeta`
+-- Struktur dari tabel `wp_postmeta`
 --
 
 CREATE TABLE `wp_postmeta` (
@@ -306,7 +319,7 @@ CREATE TABLE `wp_postmeta` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `wp_postmeta`
+-- Dumping data untuk tabel `wp_postmeta`
 --
 
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
@@ -314,12 +327,177 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (2, 3, '_wp_page_template', 'default'),
 (3, 5, '_elementor_edit_mode', 'builder'),
 (4, 5, '_elementor_template_type', 'kit'),
-(5, 5, '_elementor_version', '3.1.4');
+(5, 5, '_elementor_version', '3.1.4'),
+(7, 5, '_elementor_css', 'a:6:{s:4:\"time\";i:1617444278;s:5:\"fonts\";a:2:{i:0;s:6:\"Roboto\";i:1;s:11:\"Roboto Slab\";}s:5:\"icons\";a:0:{}s:20:\"dynamic_elements_ids\";a:0:{}s:6:\"status\";s:4:\"file\";i:0;s:0:\"\";}'),
+(8, 6, '_edit_lock', '1617448411:1'),
+(9, 6, '_edit_last', '1'),
+(11, 6, 'wpbf_options', 'a:2:{i:0;s:12:\"remove-title\";i:1;s:10:\"full-width\";}'),
+(12, 6, 'wpbf_sidebar_position', 'global'),
+(13, 6, '_elementor_template_type', 'wp-page'),
+(14, 6, '_elementor_version', '3.1.4'),
+(15, 6, '_wp_page_template', 'elementor_header_footer'),
+(16, 8, '_edit_last', '1'),
+(17, 8, '_edit_lock', '1617445794:1'),
+(18, 8, '_elementor_edit_mode', 'builder'),
+(19, 8, '_elementor_template_type', 'wp-post'),
+(20, 8, '_elementor_version', '3.1.4'),
+(21, 9, '_wp_attached_file', '2021/04/Rectangle-1.png'),
+(22, 9, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:80;s:6:\"height\";i:80;s:4:\"file\";s:23:\"2021/04/Rectangle-1.png\";s:5:\"sizes\";a:0:{}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(23, 9, '_wp_attachment_image_alt', 'logo'),
+(24, 10, '_elementor_edit_mode', 'builder'),
+(25, 10, '_elementor_template_type', 'wp-post'),
+(26, 10, '_elementor_version', '3.1.4'),
+(27, 11, '_elementor_edit_mode', 'builder'),
+(28, 11, '_elementor_template_type', 'wp-post'),
+(29, 11, '_elementor_version', '3.1.4'),
+(30, 8, '_wp_page_template', 'default'),
+(31, 8, '_elementor_data', '[{\"id\":\"a018507\",\"elType\":\"section\",\"settings\":[],\"elements\":[{\"id\":\"db1893b\",\"elType\":\"column\",\"settings\":{\"_column_size\":100,\"_inline_size\":null},\"elements\":[{\"id\":\"18e864c\",\"elType\":\"section\",\"settings\":{\"layout\":\"full_width\",\"content_width\":{\"unit\":\"px\",\"size\":1600,\"sizes\":[]},\"structure\":\"20\"},\"elements\":[{\"id\":\"dc65a23\",\"elType\":\"column\",\"settings\":{\"_column_size\":50,\"_inline_size\":null},\"elements\":[{\"id\":\"af006be\",\"elType\":\"widget\",\"settings\":{\"image\":{\"url\":\"http:\\/\\/localhost\\/hmtif\\/wp-content\\/uploads\\/2021\\/04\\/Rectangle-1.png\",\"id\":9},\"image_size\":\"thumbnail\",\"align\":\"left\",\"width\":{\"unit\":\"px\",\"size\":40,\"sizes\":[]},\"image_border_radius\":{\"unit\":\"px\",\"top\":\"\",\"right\":\"\",\"bottom\":\"\",\"left\":\"\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"image\"}],\"isInner\":true},{\"id\":\"806a9c8\",\"elType\":\"column\",\"settings\":{\"_column_size\":50,\"_inline_size\":null},\"elements\":[{\"id\":\"87ac42c\",\"elType\":\"widget\",\"settings\":{\"menu\":\"navbar\",\"menu_typography_typography\":\"custom\",\"menu_typography_font_family\":\"Open Sans\",\"menu_typography_font_weight\":\"400\"},\"elements\":[],\"widgetType\":\"navigation-menu\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false}],\"isInner\":false}]'),
+(32, 12, '_elementor_edit_mode', 'builder'),
+(33, 12, '_elementor_template_type', 'wp-post'),
+(34, 12, '_elementor_version', '3.1.4'),
+(35, 12, '_wp_page_template', 'default'),
+(36, 12, '_elementor_data', '[{\"id\":\"a018507\",\"elType\":\"section\",\"settings\":[],\"elements\":[{\"id\":\"db1893b\",\"elType\":\"column\",\"settings\":{\"_column_size\":100,\"_inline_size\":null},\"elements\":[{\"id\":\"18e864c\",\"elType\":\"section\",\"settings\":{\"layout\":\"full_width\",\"content_width\":{\"unit\":\"px\",\"size\":1600,\"sizes\":[]},\"structure\":\"20\"},\"elements\":[{\"id\":\"dc65a23\",\"elType\":\"column\",\"settings\":{\"_column_size\":50,\"_inline_size\":null},\"elements\":[{\"id\":\"af006be\",\"elType\":\"widget\",\"settings\":{\"image\":{\"url\":\"http:\\/\\/localhost\\/hmtif\\/wp-content\\/uploads\\/2021\\/04\\/Rectangle-1.png\",\"id\":9},\"image_size\":\"thumbnail\",\"align\":\"left\",\"width\":{\"unit\":\"px\",\"size\":40,\"sizes\":[]},\"image_border_radius\":{\"unit\":\"px\",\"top\":\"\",\"right\":\"\",\"bottom\":\"\",\"left\":\"\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"image\"}],\"isInner\":true},{\"id\":\"806a9c8\",\"elType\":\"column\",\"settings\":{\"_column_size\":50,\"_inline_size\":null},\"elements\":[{\"id\":\"87ac42c\",\"elType\":\"widget\",\"settings\":[],\"elements\":[],\"widgetType\":\"navigation-menu\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false}],\"isInner\":false}]'),
+(38, 13, '_edit_lock', '1617445332:1'),
+(39, 13, '_edit_last', '1'),
+(40, 13, 'wpbf_options', 'a:1:{i:0;s:13:\"layout-global\";}'),
+(41, 13, 'wpbf_sidebar_position', 'global'),
+(42, 15, '_edit_lock', '1617445354:1'),
+(43, 15, '_edit_last', '1'),
+(44, 15, 'wpbf_options', 'a:1:{i:0;s:13:\"layout-global\";}'),
+(45, 15, 'wpbf_sidebar_position', 'global'),
+(46, 17, '_edit_lock', '1617445371:1'),
+(47, 17, '_edit_last', '1'),
+(48, 17, 'wpbf_options', 'a:1:{i:0;s:13:\"layout-global\";}'),
+(49, 17, 'wpbf_sidebar_position', 'global'),
+(50, 19, '_edit_lock', '1617445387:1'),
+(51, 19, '_edit_last', '1'),
+(52, 19, 'wpbf_options', 'a:1:{i:0;s:13:\"layout-global\";}'),
+(53, 19, 'wpbf_sidebar_position', 'global'),
+(99, 26, '_elementor_edit_mode', 'builder'),
+(100, 26, '_elementor_template_type', 'wp-post'),
+(101, 26, '_elementor_version', '3.1.4'),
+(102, 26, '_wp_page_template', 'default'),
+(103, 26, '_elementor_data', '[{\"id\":\"a018507\",\"elType\":\"section\",\"settings\":[],\"elements\":[{\"id\":\"db1893b\",\"elType\":\"column\",\"settings\":{\"_column_size\":100,\"_inline_size\":null},\"elements\":[{\"id\":\"18e864c\",\"elType\":\"section\",\"settings\":{\"layout\":\"full_width\",\"content_width\":{\"unit\":\"px\",\"size\":1600,\"sizes\":[]},\"structure\":\"20\"},\"elements\":[{\"id\":\"dc65a23\",\"elType\":\"column\",\"settings\":{\"_column_size\":50,\"_inline_size\":null},\"elements\":[{\"id\":\"af006be\",\"elType\":\"widget\",\"settings\":{\"image\":{\"url\":\"http:\\/\\/localhost\\/hmtif\\/wp-content\\/uploads\\/2021\\/04\\/Rectangle-1.png\",\"id\":9},\"image_size\":\"thumbnail\",\"align\":\"left\",\"width\":{\"unit\":\"px\",\"size\":40,\"sizes\":[]},\"image_border_radius\":{\"unit\":\"px\",\"top\":\"\",\"right\":\"\",\"bottom\":\"\",\"left\":\"\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"image\"}],\"isInner\":true},{\"id\":\"806a9c8\",\"elType\":\"column\",\"settings\":{\"_column_size\":50,\"_inline_size\":null},\"elements\":[{\"id\":\"87ac42c\",\"elType\":\"widget\",\"settings\":[],\"elements\":[],\"widgetType\":\"navigation-menu\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false}],\"isInner\":false}]'),
+(104, 27, '_elementor_edit_mode', 'builder'),
+(105, 27, '_elementor_template_type', 'wp-post'),
+(106, 27, '_elementor_version', '3.1.4'),
+(107, 27, '_wp_page_template', 'default'),
+(108, 27, '_elementor_data', '[{\"id\":\"a018507\",\"elType\":\"section\",\"settings\":[],\"elements\":[{\"id\":\"db1893b\",\"elType\":\"column\",\"settings\":{\"_column_size\":100,\"_inline_size\":null},\"elements\":[{\"id\":\"18e864c\",\"elType\":\"section\",\"settings\":{\"layout\":\"full_width\",\"content_width\":{\"unit\":\"px\",\"size\":1600,\"sizes\":[]},\"structure\":\"20\"},\"elements\":[{\"id\":\"dc65a23\",\"elType\":\"column\",\"settings\":{\"_column_size\":50,\"_inline_size\":null},\"elements\":[{\"id\":\"af006be\",\"elType\":\"widget\",\"settings\":{\"image\":{\"url\":\"http:\\/\\/localhost\\/hmtif\\/wp-content\\/uploads\\/2021\\/04\\/Rectangle-1.png\",\"id\":9},\"image_size\":\"thumbnail\",\"align\":\"left\",\"width\":{\"unit\":\"px\",\"size\":40,\"sizes\":[]},\"image_border_radius\":{\"unit\":\"px\",\"top\":\"\",\"right\":\"\",\"bottom\":\"\",\"left\":\"\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"image\"}],\"isInner\":true},{\"id\":\"806a9c8\",\"elType\":\"column\",\"settings\":{\"_column_size\":50,\"_inline_size\":null},\"elements\":[{\"id\":\"87ac42c\",\"elType\":\"widget\",\"settings\":[],\"elements\":[],\"widgetType\":\"navigation-menu\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false}],\"isInner\":false}]'),
+(109, 28, '_elementor_edit_mode', 'builder'),
+(110, 28, '_elementor_template_type', 'wp-post'),
+(111, 28, '_elementor_version', '3.1.4'),
+(112, 28, '_wp_page_template', 'default'),
+(113, 28, '_elementor_data', '[{\"id\":\"a018507\",\"elType\":\"section\",\"settings\":[],\"elements\":[{\"id\":\"db1893b\",\"elType\":\"column\",\"settings\":{\"_column_size\":100,\"_inline_size\":null},\"elements\":[{\"id\":\"18e864c\",\"elType\":\"section\",\"settings\":{\"layout\":\"full_width\",\"content_width\":{\"unit\":\"px\",\"size\":1600,\"sizes\":[]},\"structure\":\"20\"},\"elements\":[{\"id\":\"dc65a23\",\"elType\":\"column\",\"settings\":{\"_column_size\":50,\"_inline_size\":null},\"elements\":[{\"id\":\"af006be\",\"elType\":\"widget\",\"settings\":{\"image\":{\"url\":\"http:\\/\\/localhost\\/hmtif\\/wp-content\\/uploads\\/2021\\/04\\/Rectangle-1.png\",\"id\":9},\"image_size\":\"thumbnail\",\"align\":\"left\",\"width\":{\"unit\":\"px\",\"size\":40,\"sizes\":[]},\"image_border_radius\":{\"unit\":\"px\",\"top\":\"\",\"right\":\"\",\"bottom\":\"\",\"left\":\"\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"image\"}],\"isInner\":true},{\"id\":\"806a9c8\",\"elType\":\"column\",\"settings\":{\"_column_size\":50,\"_inline_size\":null},\"elements\":[{\"id\":\"87ac42c\",\"elType\":\"widget\",\"settings\":{\"menu\":\"navbar\",\"menu_typography_typography\":\"custom\",\"menu_typography_font_family\":\"Open Sans\",\"menu_typography_font_weight\":\"400\"},\"elements\":[],\"widgetType\":\"navigation-menu\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false}],\"isInner\":false}]'),
+(114, 8, '_elementor_controls_usage', 'a:4:{s:5:\"image\";a:3:{s:5:\"count\";i:1;s:15:\"control_percent\";i:2;s:8:\"controls\";a:2:{s:7:\"content\";a:1:{s:13:\"section_image\";a:3:{s:5:\"image\";i:1;s:10:\"image_size\";i:1;s:5:\"align\";i:1;}}s:5:\"style\";a:1:{s:19:\"section_style_image\";a:2:{s:5:\"width\";i:1;s:19:\"image_border_radius\";i:1;}}}}s:6:\"column\";a:3:{s:5:\"count\";i:3;s:15:\"control_percent\";i:0;s:8:\"controls\";a:1:{s:6:\"layout\";a:1:{s:6:\"layout\";a:1:{s:12:\"_inline_size\";i:3;}}}}s:15:\"navigation-menu\";a:3:{s:5:\"count\";i:1;s:15:\"control_percent\";i:1;s:8:\"controls\";a:1:{s:5:\"style\";a:1:{s:23:\"section_style_main-menu\";a:3:{s:26:\"menu_typography_typography\";i:1;s:27:\"menu_typography_font_family\";i:1;s:27:\"menu_typography_font_weight\";i:1;}}}}s:7:\"section\";a:3:{s:5:\"count\";i:2;s:15:\"control_percent\";i:0;s:8:\"controls\";a:1:{s:6:\"layout\";a:2:{s:14:\"section_layout\";a:2:{s:6:\"layout\";i:1;s:13:\"content_width\";i:1;}s:17:\"section_structure\";a:1:{s:9:\"structure\";i:1;}}}}}'),
+(115, 8, '_elementor_css', 'a:6:{s:4:\"time\";i:1617445661;s:5:\"fonts\";a:1:{i:0;s:9:\"Open Sans\";}s:5:\"icons\";a:2:{i:0;s:8:\"fa-solid\";i:1;s:10:\"fa-regular\";}s:20:\"dynamic_elements_ids\";a:0:{}s:6:\"status\";s:4:\"file\";i:0;s:0:\"\";}'),
+(116, 8, 'ehf_target_include_locations', 'a:2:{s:4:\"rule\";a:1:{i:0;s:8:\"page|all\";}s:8:\"specific\";a:0:{}}'),
+(117, 8, 'ehf_target_exclude_locations', 'a:0:{}'),
+(118, 8, 'ehf_target_user_roles', 'a:1:{i:0;s:3:\"all\";}'),
+(119, 8, 'ehf_template_type', 'type_header'),
+(120, 29, '_elementor_edit_mode', 'builder'),
+(121, 29, '_elementor_template_type', 'wp-post'),
+(122, 29, '_elementor_version', '3.1.4'),
+(123, 29, '_wp_page_template', 'default'),
+(124, 29, '_elementor_data', '[{\"id\":\"a018507\",\"elType\":\"section\",\"settings\":[],\"elements\":[{\"id\":\"db1893b\",\"elType\":\"column\",\"settings\":{\"_column_size\":100,\"_inline_size\":null},\"elements\":[{\"id\":\"18e864c\",\"elType\":\"section\",\"settings\":{\"layout\":\"full_width\",\"content_width\":{\"unit\":\"px\",\"size\":1600,\"sizes\":[]},\"structure\":\"20\"},\"elements\":[{\"id\":\"dc65a23\",\"elType\":\"column\",\"settings\":{\"_column_size\":50,\"_inline_size\":null},\"elements\":[{\"id\":\"af006be\",\"elType\":\"widget\",\"settings\":{\"image\":{\"url\":\"http:\\/\\/localhost\\/hmtif\\/wp-content\\/uploads\\/2021\\/04\\/Rectangle-1.png\",\"id\":9},\"image_size\":\"thumbnail\",\"align\":\"left\",\"width\":{\"unit\":\"px\",\"size\":40,\"sizes\":[]},\"image_border_radius\":{\"unit\":\"px\",\"top\":\"\",\"right\":\"\",\"bottom\":\"\",\"left\":\"\",\"isLinked\":false}},\"elements\":[],\"widgetType\":\"image\"}],\"isInner\":true},{\"id\":\"806a9c8\",\"elType\":\"column\",\"settings\":{\"_column_size\":50,\"_inline_size\":null},\"elements\":[{\"id\":\"87ac42c\",\"elType\":\"widget\",\"settings\":{\"menu\":\"navbar\",\"menu_typography_typography\":\"custom\",\"menu_typography_font_family\":\"Open Sans\",\"menu_typography_font_weight\":\"400\"},\"elements\":[],\"widgetType\":\"navigation-menu\"}],\"isInner\":true}],\"isInner\":true}],\"isInner\":false}],\"isInner\":false}]'),
+(125, 29, '_elementor_controls_usage', 'a:4:{s:5:\"image\";a:3:{s:5:\"count\";i:1;s:15:\"control_percent\";i:2;s:8:\"controls\";a:2:{s:7:\"content\";a:1:{s:13:\"section_image\";a:3:{s:5:\"image\";i:1;s:10:\"image_size\";i:1;s:5:\"align\";i:1;}}s:5:\"style\";a:1:{s:19:\"section_style_image\";a:2:{s:5:\"width\";i:1;s:19:\"image_border_radius\";i:1;}}}}s:6:\"column\";a:3:{s:5:\"count\";i:3;s:15:\"control_percent\";i:0;s:8:\"controls\";a:1:{s:6:\"layout\";a:1:{s:6:\"layout\";a:1:{s:12:\"_inline_size\";i:3;}}}}s:15:\"navigation-menu\";a:3:{s:5:\"count\";i:1;s:15:\"control_percent\";i:1;s:8:\"controls\";a:1:{s:5:\"style\";a:1:{s:23:\"section_style_main-menu\";a:3:{s:26:\"menu_typography_typography\";i:1;s:27:\"menu_typography_font_family\";i:1;s:27:\"menu_typography_font_weight\";i:1;}}}}s:7:\"section\";a:3:{s:5:\"count\";i:2;s:15:\"control_percent\";i:0;s:8:\"controls\";a:1:{s:6:\"layout\";a:2:{s:14:\"section_layout\";a:2:{s:6:\"layout\";i:1;s:13:\"content_width\";i:1;}s:17:\"section_structure\";a:1:{s:9:\"structure\";i:1;}}}}}'),
+(126, 29, '_elementor_css', 'a:6:{s:4:\"time\";i:1617445661;s:5:\"fonts\";a:1:{i:0;s:9:\"Open Sans\";}s:5:\"icons\";a:2:{i:0;s:8:\"fa-solid\";i:1;s:10:\"fa-regular\";}s:20:\"dynamic_elements_ids\";a:0:{}s:6:\"status\";s:4:\"file\";i:0;s:0:\"\";}'),
+(127, 8, 'wpbf_options', 'a:1:{i:0;s:13:\"layout-global\";}'),
+(128, 8, 'wpbf_sidebar_position', 'global'),
+(129, 30, '_wp_attached_file', '2021/04/cropped-Rectangle-1.png'),
+(130, 30, '_wp_attachment_context', 'custom-logo'),
+(131, 30, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:80;s:6:\"height\";i:80;s:4:\"file\";s:31:\"2021/04/cropped-Rectangle-1.png\";s:5:\"sizes\";a:0:{}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(133, 32, '_menu_item_type', 'custom'),
+(134, 32, '_menu_item_menu_item_parent', '0'),
+(135, 32, '_menu_item_object_id', '32'),
+(136, 32, '_menu_item_object', 'custom'),
+(137, 32, '_menu_item_target', ''),
+(138, 32, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(139, 32, '_menu_item_xfn', ''),
+(140, 32, '_menu_item_url', 'http://localhost/hmtif/'),
+(141, 32, '_menu_item_orphaned', '1617446236'),
+(142, 33, '_menu_item_type', 'custom'),
+(143, 33, '_menu_item_menu_item_parent', '0'),
+(144, 33, '_menu_item_object_id', '33'),
+(145, 33, '_menu_item_object', 'custom'),
+(146, 33, '_menu_item_target', ''),
+(147, 33, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(148, 33, '_menu_item_xfn', ''),
+(149, 33, '_menu_item_url', 'http://localhost/hmtif/'),
+(151, 34, '_menu_item_type', 'post_type'),
+(152, 34, '_menu_item_menu_item_parent', '0'),
+(153, 34, '_menu_item_object_id', '19'),
+(154, 34, '_menu_item_object', 'page'),
+(155, 34, '_menu_item_target', ''),
+(156, 34, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(157, 34, '_menu_item_xfn', ''),
+(158, 34, '_menu_item_url', ''),
+(160, 35, '_menu_item_type', 'post_type'),
+(161, 35, '_menu_item_menu_item_parent', '0'),
+(162, 35, '_menu_item_object_id', '17'),
+(163, 35, '_menu_item_object', 'page'),
+(164, 35, '_menu_item_target', ''),
+(165, 35, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(166, 35, '_menu_item_xfn', ''),
+(167, 35, '_menu_item_url', ''),
+(169, 36, '_menu_item_type', 'post_type'),
+(170, 36, '_menu_item_menu_item_parent', '0'),
+(171, 36, '_menu_item_object_id', '15'),
+(172, 36, '_menu_item_object', 'page'),
+(173, 36, '_menu_item_target', ''),
+(174, 36, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(175, 36, '_menu_item_xfn', ''),
+(176, 36, '_menu_item_url', ''),
+(178, 37, '_menu_item_type', 'post_type'),
+(179, 37, '_menu_item_menu_item_parent', '0'),
+(180, 37, '_menu_item_object_id', '13'),
+(181, 37, '_menu_item_object', 'page'),
+(182, 37, '_menu_item_target', ''),
+(183, 37, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(184, 37, '_menu_item_xfn', ''),
+(185, 37, '_menu_item_url', ''),
+(187, 38, '_menu_item_type', 'post_type'),
+(188, 38, '_menu_item_menu_item_parent', '0'),
+(189, 38, '_menu_item_object_id', '6'),
+(190, 38, '_menu_item_object', 'page'),
+(191, 38, '_menu_item_target', ''),
+(192, 38, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(193, 38, '_menu_item_xfn', ''),
+(194, 38, '_menu_item_url', ''),
+(195, 38, '_menu_item_orphaned', '1617446259'),
+(196, 31, '_customize_restore_dismissed', '1'),
+(197, 39, '_edit_lock', '1617446442:1'),
+(198, 39, '_wp_trash_meta_status', 'publish'),
+(199, 39, '_wp_trash_meta_time', '1617446483'),
+(200, 40, '_wp_trash_meta_status', 'publish'),
+(201, 40, '_wp_trash_meta_time', '1617446854'),
+(202, 6, '_elementor_edit_mode', 'builder'),
+(208, 42, '_wp_attached_file', '2021/04/kahim-1.png'),
+(209, 42, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:548;s:6:\"height\";i:700;s:4:\"file\";s:19:\"2021/04/kahim-1.png\";s:5:\"sizes\";a:2:{s:6:\"medium\";a:4:{s:4:\"file\";s:19:\"kahim-1-235x300.png\";s:5:\"width\";i:235;s:6:\"height\";i:300;s:9:\"mime-type\";s:9:\"image/png\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:19:\"kahim-1-150x150.png\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:9:\"image/png\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(210, 42, '_wp_attachment_image_alt', 'kahim 20/21'),
+(211, 43, '_wp_attached_file', '2021/04/Vector.svg'),
+(212, 43, '_elementor_inline_svg', '<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"21\" height=\"17\" viewBox=\"0 0 21 17\" fill=\"none\"><path d=\"M17.7917 0.166656H3.20837C2.37957 0.166656 1.58472 0.495897 0.998666 1.08195C0.412614 1.668 0.083374 2.46285 0.083374 3.29166V13.7083C0.083374 14.5371 0.412614 15.332 0.998666 15.918C1.58472 16.5041 2.37957 16.8333 3.20837 16.8333H17.7917C18.6205 16.8333 19.4154 16.5041 20.0014 15.918C20.5875 15.332 20.9167 14.5371 20.9167 13.7083V3.29166C20.9167 2.46285 20.5875 1.668 20.0014 1.08195C19.4154 0.495897 18.6205 0.166656 17.7917 0.166656ZM17.3646 2.24999L11.2396 8.37499C11.1428 8.47262 11.0276 8.55012 10.9006 8.603C10.7737 8.65588 10.6376 8.68311 10.5 8.68311C10.3625 8.68311 10.2264 8.65588 10.0994 8.603C9.9725 8.55012 9.85729 8.47262 9.76046 8.37499L3.63546 2.24999H17.3646ZM18.8334 13.7083C18.8334 13.9846 18.7236 14.2495 18.5283 14.4449C18.3329 14.6402 18.068 14.75 17.7917 14.75H3.20837C2.93211 14.75 2.66716 14.6402 2.4718 14.4449C2.27645 14.2495 2.16671 13.9846 2.16671 13.7083V3.71874L8.29171 9.84374C8.87765 10.4289 9.67191 10.7577 10.5 10.7577C11.3282 10.7577 12.1224 10.4289 12.7084 9.84374L18.8334 3.71874V13.7083Z\" fill=\"black\"></path></svg>'),
+(213, 43, '_wp_attachment_image_alt', 'email'),
+(214, 44, '_elementor_template_type', 'wp-page'),
+(215, 44, '_elementor_version', '3.1.4'),
+(216, 44, '_wp_page_template', 'elementor_header_footer'),
+(217, 44, '_elementor_edit_mode', 'builder'),
+(218, 45, '_elementor_template_type', 'wp-page'),
+(219, 45, '_elementor_version', '3.1.4'),
+(220, 45, '_wp_page_template', 'elementor_header_footer'),
+(221, 45, '_elementor_edit_mode', 'builder'),
+(222, 6, '_elementor_data', '[{\"id\":\"a2a7d61\",\"elType\":\"section\",\"settings\":[],\"elements\":[{\"id\":\"10cc4f7\",\"elType\":\"column\",\"settings\":{\"_column_size\":100,\"_inline_size\":null},\"elements\":[{\"id\":\"d6dcd4c\",\"elType\":\"section\",\"settings\":[],\"elements\":[{\"id\":\"2e1dd9d\",\"elType\":\"column\",\"settings\":{\"_column_size\":100,\"_inline_size\":null},\"elements\":[{\"id\":\"c31ff2d\",\"elType\":\"widget\",\"settings\":{\"title\":\"Home Visi &amp; Misi Kabinet\",\"size\":\"medium\",\"align\":\"left\",\"title_color\":\"#000000\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Alfa Slab One\",\"typography_font_weight\":\"600\"},\"elements\":[],\"widgetType\":\"heading\"}],\"isInner\":true}],\"isInner\":true},{\"id\":\"4eea523\",\"elType\":\"section\",\"settings\":{\"structure\":\"20\"},\"elements\":[{\"id\":\"1cd2cda\",\"elType\":\"column\",\"settings\":{\"_column_size\":50,\"_inline_size\":null},\"elements\":[{\"id\":\"b3a14fd\",\"elType\":\"widget\",\"settings\":{\"title\":\"NOTRE<br>DAME.\",\"header_size\":\"h1\",\"title_color\":\"#2F615E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Alfa Slab One\",\"typography_font_size\":{\"unit\":\"px\",\"size\":100,\"sizes\":[]},\"typography_font_weight\":\"600\"},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"0b7ad83\",\"elType\":\"widget\",\"settings\":{\"title\":\"HIMPUNAN MAHASISWA TEKNIK INFORMATIKA UNIVERSITAS PASUNDAN\",\"header_size\":\"h3\",\"title_color\":\"#000000\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Alfa Slab One\",\"typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]},\"typography_font_weight\":\"200\"},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"fcd562e\",\"elType\":\"widget\",\"settings\":{\"title\":\"Himpunan Mahasiswa Teknik Informatika Universitas Pasundan Disingkat (HMTIF \\u2013 UNPAS), berdiri pada tanggal 30 September 1993 bertempat di lingkungan Fakultas Teknik Program Studi Teknik Informatika Universitas Pasundan Bandung\",\"header_size\":\"p\",\"title_color\":\"#000000\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Open Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]},\"typography_font_weight\":\"200\",\"typography_line_height\":{\"unit\":\"em\",\"size\":1.6,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"}],\"isInner\":true},{\"id\":\"427f202\",\"elType\":\"column\",\"settings\":{\"_column_size\":50,\"_inline_size\":null},\"elements\":[{\"id\":\"3b2cdd4\",\"elType\":\"widget\",\"settings\":{\"image\":{\"url\":\"http:\\/\\/localhost\\/hmtif\\/wp-content\\/uploads\\/2021\\/04\\/kahim-1.png\",\"id\":42},\"image_size\":\"thumbnail\"},\"elements\":[],\"widgetType\":\"image\"}],\"isInner\":true}],\"isInner\":true},{\"id\":\"0020d70\",\"elType\":\"section\",\"settings\":{\"structure\":\"40\"},\"elements\":[{\"id\":\"b32c7d2\",\"elType\":\"column\",\"settings\":{\"_column_size\":25,\"_inline_size\":null},\"elements\":[{\"id\":\"4d15557\",\"elType\":\"widget\",\"settings\":{\"title\":\"Proker &amp; Agenda<br>100\",\"header_size\":\"p\",\"title_color\":\"#000000\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Alfa Slab One\",\"typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]},\"typography_font_weight\":\"400\"},\"elements\":[],\"widgetType\":\"heading\"}],\"isInner\":true},{\"id\":\"3002153\",\"elType\":\"column\",\"settings\":{\"_column_size\":25,\"_inline_size\":null},\"elements\":[{\"id\":\"da261cb\",\"elType\":\"widget\",\"settings\":{\"title\":\"Anggota Pengurus<br>100\",\"header_size\":\"p\",\"title_color\":\"#000000\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Alfa Slab One\",\"typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]},\"typography_font_weight\":\"400\"},\"elements\":[],\"widgetType\":\"heading\"}],\"isInner\":true},{\"id\":\"c39d5a3\",\"elType\":\"column\",\"settings\":{\"_column_size\":25,\"_inline_size\":null},\"elements\":[],\"isInner\":true},{\"id\":\"6bcaafb\",\"elType\":\"column\",\"settings\":{\"_column_size\":25,\"_inline_size\":null},\"elements\":[],\"isInner\":true}],\"isInner\":true},{\"id\":\"d34b1ed\",\"elType\":\"widget\",\"settings\":{\"title\":\"____________________________________________\",\"title_color\":\"#000000\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Roboto\",\"typography_font_weight\":\"200\"},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"9a6c7c4\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":{\"url\":\"http:\\/\\/localhost\\/hmtif\\/wp-content\\/uploads\\/2021\\/04\\/Vector.svg\",\"id\":43},\"library\":\"svg\"},\"align\":\"left\",\"primary_color\":\"#6EC1E4\",\"size\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"icon\"},{\"id\":\"7878f26\",\"elType\":\"widget\",\"settings\":{\"title\":\"\"},\"elements\":[],\"widgetType\":\"heading\"}],\"isInner\":false}],\"isInner\":false}]'),
+(223, 46, '_elementor_template_type', 'wp-page'),
+(224, 46, '_elementor_version', '3.1.4'),
+(225, 46, '_wp_page_template', 'elementor_header_footer'),
+(226, 46, '_elementor_edit_mode', 'builder'),
+(227, 46, '_elementor_data', '[{\"id\":\"a2a7d61\",\"elType\":\"section\",\"settings\":[],\"elements\":[{\"id\":\"10cc4f7\",\"elType\":\"column\",\"settings\":{\"_column_size\":100,\"_inline_size\":null},\"elements\":[{\"id\":\"d6dcd4c\",\"elType\":\"section\",\"settings\":[],\"elements\":[{\"id\":\"2e1dd9d\",\"elType\":\"column\",\"settings\":{\"_column_size\":100,\"_inline_size\":null},\"elements\":[{\"id\":\"c31ff2d\",\"elType\":\"widget\",\"settings\":{\"title\":\"Home Visi &amp; Misi Kabinet\",\"size\":\"medium\",\"align\":\"left\",\"title_color\":\"#000000\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Alfa Slab One\",\"typography_font_weight\":\"600\"},\"elements\":[],\"widgetType\":\"heading\"}],\"isInner\":true}],\"isInner\":true},{\"id\":\"4eea523\",\"elType\":\"section\",\"settings\":{\"structure\":\"20\"},\"elements\":[{\"id\":\"1cd2cda\",\"elType\":\"column\",\"settings\":{\"_column_size\":50,\"_inline_size\":null},\"elements\":[{\"id\":\"b3a14fd\",\"elType\":\"widget\",\"settings\":{\"title\":\"NOTRE<br>DAME.\",\"header_size\":\"h1\",\"title_color\":\"#2F615E\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Alfa Slab One\",\"typography_font_size\":{\"unit\":\"px\",\"size\":100,\"sizes\":[]},\"typography_font_weight\":\"600\"},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"0b7ad83\",\"elType\":\"widget\",\"settings\":{\"title\":\"HIMPUNAN MAHASISWA TEKNIK INFORMATIKA UNIVERSITAS PASUNDAN\",\"header_size\":\"h3\",\"title_color\":\"#000000\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Alfa Slab One\",\"typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]},\"typography_font_weight\":\"200\"},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"fcd562e\",\"elType\":\"widget\",\"settings\":{\"title\":\"Himpunan Mahasiswa Teknik Informatika Universitas Pasundan Disingkat (HMTIF \\u2013 UNPAS), berdiri pada tanggal 30 September 1993 bertempat di lingkungan Fakultas Teknik Program Studi Teknik Informatika Universitas Pasundan Bandung\",\"header_size\":\"p\",\"title_color\":\"#000000\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Open Sans\",\"typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]},\"typography_font_weight\":\"200\",\"typography_line_height\":{\"unit\":\"em\",\"size\":1.6,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"heading\"}],\"isInner\":true},{\"id\":\"427f202\",\"elType\":\"column\",\"settings\":{\"_column_size\":50,\"_inline_size\":null},\"elements\":[{\"id\":\"3b2cdd4\",\"elType\":\"widget\",\"settings\":{\"image\":{\"url\":\"http:\\/\\/localhost\\/hmtif\\/wp-content\\/uploads\\/2021\\/04\\/kahim-1.png\",\"id\":42},\"image_size\":\"thumbnail\"},\"elements\":[],\"widgetType\":\"image\"}],\"isInner\":true}],\"isInner\":true},{\"id\":\"0020d70\",\"elType\":\"section\",\"settings\":{\"structure\":\"40\"},\"elements\":[{\"id\":\"b32c7d2\",\"elType\":\"column\",\"settings\":{\"_column_size\":25,\"_inline_size\":null},\"elements\":[{\"id\":\"4d15557\",\"elType\":\"widget\",\"settings\":{\"title\":\"Proker &amp; Agenda<br>100\",\"header_size\":\"p\",\"title_color\":\"#000000\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Alfa Slab One\",\"typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]},\"typography_font_weight\":\"400\"},\"elements\":[],\"widgetType\":\"heading\"}],\"isInner\":true},{\"id\":\"3002153\",\"elType\":\"column\",\"settings\":{\"_column_size\":25,\"_inline_size\":null},\"elements\":[{\"id\":\"da261cb\",\"elType\":\"widget\",\"settings\":{\"title\":\"Anggota Pengurus<br>100\",\"header_size\":\"p\",\"title_color\":\"#000000\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Alfa Slab One\",\"typography_font_size\":{\"unit\":\"px\",\"size\":18,\"sizes\":[]},\"typography_font_weight\":\"400\"},\"elements\":[],\"widgetType\":\"heading\"}],\"isInner\":true},{\"id\":\"c39d5a3\",\"elType\":\"column\",\"settings\":{\"_column_size\":25,\"_inline_size\":null},\"elements\":[],\"isInner\":true},{\"id\":\"6bcaafb\",\"elType\":\"column\",\"settings\":{\"_column_size\":25,\"_inline_size\":null},\"elements\":[],\"isInner\":true}],\"isInner\":true},{\"id\":\"d34b1ed\",\"elType\":\"widget\",\"settings\":{\"title\":\"____________________________________________\",\"title_color\":\"#000000\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Roboto\",\"typography_font_weight\":\"200\"},\"elements\":[],\"widgetType\":\"heading\"},{\"id\":\"9a6c7c4\",\"elType\":\"widget\",\"settings\":{\"selected_icon\":{\"value\":{\"url\":\"http:\\/\\/localhost\\/hmtif\\/wp-content\\/uploads\\/2021\\/04\\/Vector.svg\",\"id\":43},\"library\":\"svg\"},\"align\":\"left\",\"primary_color\":\"#6EC1E4\",\"size\":{\"unit\":\"px\",\"size\":20,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"icon\"},{\"id\":\"7878f26\",\"elType\":\"widget\",\"settings\":{\"title\":\"\"},\"elements\":[],\"widgetType\":\"heading\"}],\"isInner\":false}],\"isInner\":false}]'),
+(228, 6, '_elementor_controls_usage', 'a:5:{s:7:\"heading\";a:3:{s:5:\"count\";i:8;s:15:\"control_percent\";i:0;s:8:\"controls\";a:2:{s:7:\"content\";a:1:{s:13:\"section_title\";a:4:{s:5:\"title\";i:8;s:4:\"size\";i:1;s:5:\"align\";i:1;s:11:\"header_size\";i:5;}}s:5:\"style\";a:1:{s:19:\"section_title_style\";a:6:{s:11:\"title_color\";i:7;s:21:\"typography_typography\";i:7;s:22:\"typography_font_family\";i:7;s:22:\"typography_font_weight\";i:7;s:20:\"typography_font_size\";i:5;s:22:\"typography_line_height\";i:1;}}}}s:6:\"column\";a:3:{s:5:\"count\";i:8;s:15:\"control_percent\";i:0;s:8:\"controls\";a:1:{s:6:\"layout\";a:1:{s:6:\"layout\";a:1:{s:12:\"_inline_size\";i:8;}}}}s:7:\"section\";a:3:{s:5:\"count\";i:4;s:15:\"control_percent\";i:0;s:8:\"controls\";a:1:{s:6:\"layout\";a:1:{s:17:\"section_structure\";a:1:{s:9:\"structure\";i:2;}}}}s:5:\"image\";a:3:{s:5:\"count\";i:1;s:15:\"control_percent\";i:1;s:8:\"controls\";a:1:{s:7:\"content\";a:1:{s:13:\"section_image\";a:2:{s:5:\"image\";i:1;s:10:\"image_size\";i:1;}}}}s:4:\"icon\";a:3:{s:5:\"count\";i:1;s:15:\"control_percent\";i:2;s:8:\"controls\";a:2:{s:7:\"content\";a:1:{s:12:\"section_icon\";a:2:{s:13:\"selected_icon\";i:1;s:5:\"align\";i:1;}}s:5:\"style\";a:1:{s:18:\"section_style_icon\";a:2:{s:13:\"primary_color\";i:1;s:4:\"size\";i:1;}}}}}'),
+(229, 6, '_elementor_css', 'a:6:{s:4:\"time\";i:1617448555;s:5:\"fonts\";a:3:{i:0;s:13:\"Alfa Slab One\";i:3;s:9:\"Open Sans\";i:6;s:6:\"Roboto\";}s:5:\"icons\";a:1:{i:0;s:3:\"svg\";}s:20:\"dynamic_elements_ids\";a:0:{}s:6:\"status\";s:4:\"file\";i:0;s:0:\"\";}');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wp_posts`
+-- Struktur dari tabel `wp_posts`
 --
 
 CREATE TABLE `wp_posts` (
@@ -349,7 +527,7 @@ CREATE TABLE `wp_posts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `wp_posts`
+-- Dumping data untuk tabel `wp_posts`
 --
 
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
@@ -357,12 +535,47 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (2, 1, '2021-04-03 09:16:42', '2021-04-03 09:16:42', '<!-- wp:paragraph -->\n<p>This is an example page. It\'s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><p>Hi there! I\'m a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin\' caught in the rain.)</p></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:paragraph -->\n<p>...or something like this:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><p>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</p></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:paragraph -->\n<p>As a new WordPress user, you should go to <a href=\"http://localhost/hmtif/wp-admin/\">your dashboard</a> to delete this page and create new pages for your content. Have fun!</p>\n<!-- /wp:paragraph -->', 'Sample Page', '', 'publish', 'closed', 'open', '', 'sample-page', '', '', '2021-04-03 09:16:42', '2021-04-03 09:16:42', '', 0, 'http://localhost/hmtif/?page_id=2', 0, 'page', '', 0),
 (3, 1, '2021-04-03 09:16:42', '2021-04-03 09:16:42', '<!-- wp:heading --><h2>Who we are</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Our website address is: http://localhost/hmtif.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>What personal data we collect and why we collect it</h2><!-- /wp:heading --><!-- wp:heading {\"level\":3} --><h3>Comments</h3><!-- /wp:heading --><!-- wp:paragraph --><p>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":3} --><h3>Media</h3><!-- /wp:heading --><!-- wp:paragraph --><p>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":3} --><h3>Contact forms</h3><!-- /wp:heading --><!-- wp:heading {\"level\":3} --><h3>Cookies</h3><!-- /wp:heading --><!-- wp:paragraph --><p>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select &quot;Remember Me&quot;, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":3} --><h3>Embedded content from other websites</h3><!-- /wp:heading --><!-- wp:paragraph --><p>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":3} --><h3>Analytics</h3><!-- /wp:heading --><!-- wp:heading --><h2>Who we share your data with</h2><!-- /wp:heading --><!-- wp:paragraph --><p>If you request a password reset, your IP address will be included in the reset email.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>How long we retain your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>What rights you have over your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Where we send your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Visitor comments may be checked through an automated spam detection service.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Your contact information</h2><!-- /wp:heading --><!-- wp:heading --><h2>Additional information</h2><!-- /wp:heading --><!-- wp:heading {\"level\":3} --><h3>How we protect your data</h3><!-- /wp:heading --><!-- wp:heading {\"level\":3} --><h3>What data breach procedures we have in place</h3><!-- /wp:heading --><!-- wp:heading {\"level\":3} --><h3>What third parties we receive data from</h3><!-- /wp:heading --><!-- wp:heading {\"level\":3} --><h3>What automated decision making and/or profiling we do with user data</h3><!-- /wp:heading --><!-- wp:heading {\"level\":3} --><h3>Industry regulatory disclosure requirements</h3><!-- /wp:heading -->', 'Privacy Policy', '', 'draft', 'closed', 'open', '', 'privacy-policy', '', '', '2021-04-03 09:16:42', '2021-04-03 09:16:42', '', 0, 'http://localhost/hmtif/?page_id=3', 0, 'page', '', 0),
 (4, 1, '2021-04-03 09:17:08', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2021-04-03 09:17:08', '0000-00-00 00:00:00', '', 0, 'http://localhost/hmtif/?p=4', 0, 'post', '', 0),
-(5, 1, '2021-04-03 09:29:09', '2021-04-03 09:29:09', '', 'Default Kit', '', 'publish', 'closed', 'closed', '', 'default-kit', '', '', '2021-04-03 09:29:09', '2021-04-03 09:29:09', '', 0, 'http://localhost/hmtif/?elementor_library=default-kit', 0, 'elementor_library', '', 0);
+(5, 1, '2021-04-03 09:29:09', '2021-04-03 09:29:09', '', 'Default Kit', '', 'publish', 'closed', 'closed', '', 'default-kit', '', '', '2021-04-03 09:29:09', '2021-04-03 09:29:09', '', 0, 'http://localhost/hmtif/?elementor_library=default-kit', 0, 'elementor_library', '', 0),
+(6, 1, '2021-04-03 10:08:27', '2021-04-03 10:08:27', '<h2>Home Visi &amp; Misi Kabinet</h2>		\n			<h1>NOTRE<br>DAME.</h1>		\n			<h3>HIMPUNAN MAHASISWA TEKNIK INFORMATIKA UNIVERSITAS PASUNDAN</h3>		\n			<p>Himpunan Mahasiswa Teknik Informatika Universitas Pasundan Disingkat (HMTIF – UNPAS), berdiri pada tanggal 30 September 1993 bertempat di lingkungan Fakultas Teknik Program Studi Teknik Informatika Universitas Pasundan Bandung</p>		\n										<img width=\"150\" height=\"150\" src=\"http://localhost/hmtif/wp-content/uploads/2021/04/kahim-1-150x150.png\" alt=\"kahim 20/21\" loading=\"lazy\" />											\n			<p>Proker &amp; Agenda<br>100</p>		\n			<p>Anggota Pengurus<br>100</p>		\n			<h2>____________________________________________</h2>		\n			<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"21\" height=\"17\" viewBox=\"0 0 21 17\" fill=\"none\"><path d=\"M17.7917 0.166656H3.20837C2.37957 0.166656 1.58472 0.495897 0.998666 1.08195C0.412614 1.668 0.083374 2.46285 0.083374 3.29166V13.7083C0.083374 14.5371 0.412614 15.332 0.998666 15.918C1.58472 16.5041 2.37957 16.8333 3.20837 16.8333H17.7917C18.6205 16.8333 19.4154 16.5041 20.0014 15.918C20.5875 15.332 20.9167 14.5371 20.9167 13.7083V3.29166C20.9167 2.46285 20.5875 1.668 20.0014 1.08195C19.4154 0.495897 18.6205 0.166656 17.7917 0.166656ZM17.3646 2.24999L11.2396 8.37499C11.1428 8.47262 11.0276 8.55012 10.9006 8.603C10.7737 8.65588 10.6376 8.68311 10.5 8.68311C10.3625 8.68311 10.2264 8.65588 10.0994 8.603C9.9725 8.55012 9.85729 8.47262 9.76046 8.37499L3.63546 2.24999H17.3646ZM18.8334 13.7083C18.8334 13.9846 18.7236 14.2495 18.5283 14.4449C18.3329 14.6402 18.068 14.75 17.7917 14.75H3.20837C2.93211 14.75 2.66716 14.6402 2.4718 14.4449C2.27645 14.2495 2.16671 13.9846 2.16671 13.7083V3.71874L8.29171 9.84374C8.87765 10.4289 9.67191 10.7577 10.5 10.7577C11.3282 10.7577 12.1224 10.4289 12.7084 9.84374L18.8334 3.71874V13.7083Z\" fill=\"black\"></path></svg>', 'Home', '', 'publish', 'closed', 'closed', '', 'home', '', '', '2021-04-03 11:15:41', '2021-04-03 11:15:41', '', 0, 'http://localhost/hmtif/?page_id=6', 0, 'page', '', 0),
+(7, 1, '2021-04-03 10:05:42', '2021-04-03 10:05:42', '', 'Home', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2021-04-03 10:05:42', '2021-04-03 10:05:42', '', 6, 'http://localhost/hmtif/2021/04/03/6-revision-v1/', 0, 'revision', '', 0),
+(8, 1, '2021-04-03 10:12:47', '2021-04-03 10:12:47', '<img width=\"80\" height=\"80\" src=\"http://localhost/hmtif/wp-content/uploads/2021/04/Rectangle-1.png\" alt=\"logo\" loading=\"lazy\" />											\n				<nav data-toggle-icon=\"&lt;i aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;fas fa-align-justify&quot;&gt;&lt;/i&gt;\" data-close-icon=\"&lt;i aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;far fa-window-close&quot;&gt;&lt;/i&gt;\" data-full-width=\"yes\"><ul id=\"menu-1-87ac42c\"><li id=\"menu-item-21\"><a href=\"http://localhost/hmtif/\" class = \"hfe-menu-item\">Home</a></li>\n<li id=\"menu-item-25\"><a href=\"http://localhost/hmtif/profile/\" class = \"hfe-menu-item\">Profile</a></li>\n<li id=\"menu-item-24\"><a href=\"http://localhost/hmtif/akademik/\" class = \"hfe-menu-item\">Akademik</a></li>\n<li id=\"menu-item-23\"><a href=\"http://localhost/hmtif/galeri/\" class = \"hfe-menu-item\">Galeri</a></li>\n<li id=\"menu-item-22\"><a href=\"http://localhost/hmtif/berita/\" class = \"hfe-menu-item\">Berita</a></li>\n</ul></nav>', 'Menu Utama', '', 'publish', 'closed', 'closed', '', 'elementor-8', '', '', '2021-04-03 10:31:57', '2021-04-03 10:31:57', '', 0, 'http://localhost/hmtif/?post_type=elementor-hf&#038;p=8', 0, 'elementor-hf', '', 0),
+(9, 1, '2021-04-03 10:13:51', '2021-04-03 10:13:51', '', 'logo', '', 'inherit', 'open', 'closed', '', 'rectangle-1', '', '', '2021-04-03 10:14:06', '2021-04-03 10:14:06', '', 8, 'http://localhost/hmtif/wp-content/uploads/2021/04/Rectangle-1.png', 0, 'attachment', 'image/png', 0),
+(10, 1, '2021-04-03 10:19:10', '2021-04-03 10:19:10', '', 'Elementor #8', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2021-04-03 10:19:10', '2021-04-03 10:19:10', '', 8, 'http://localhost/hmtif/2021/04/03/8-revision-v1/', 0, 'revision', '', 0),
+(11, 1, '2021-04-03 10:19:10', '2021-04-03 10:19:10', '', 'Elementor #8', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2021-04-03 10:19:10', '2021-04-03 10:19:10', '', 8, 'http://localhost/hmtif/2021/04/03/8-revision-v1/', 0, 'revision', '', 0),
+(12, 1, '2021-04-03 10:19:10', '2021-04-03 10:19:10', '<img width=\"80\" height=\"80\" src=\"http://localhost/hmtif/wp-content/uploads/2021/04/Rectangle-1.png\" alt=\"logo\" loading=\"lazy\" />', 'Elementor #8', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2021-04-03 10:19:10', '2021-04-03 10:19:10', '', 8, 'http://localhost/hmtif/2021/04/03/8-revision-v1/', 0, 'revision', '', 0),
+(13, 1, '2021-04-03 10:22:09', '2021-04-03 10:22:09', '', 'Profile', '', 'publish', 'closed', 'closed', '', 'profile', '', '', '2021-04-03 10:22:11', '2021-04-03 10:22:11', '', 0, 'http://localhost/hmtif/?page_id=13', 0, 'page', '', 0),
+(14, 1, '2021-04-03 10:22:09', '2021-04-03 10:22:09', '', 'Profile', '', 'inherit', 'closed', 'closed', '', '13-revision-v1', '', '', '2021-04-03 10:22:09', '2021-04-03 10:22:09', '', 13, 'http://localhost/hmtif/2021/04/03/13-revision-v1/', 0, 'revision', '', 0),
+(15, 1, '2021-04-03 10:22:31', '2021-04-03 10:22:31', '', 'Akademik', '', 'publish', 'closed', 'closed', '', 'akademik', '', '', '2021-04-03 10:22:33', '2021-04-03 10:22:33', '', 0, 'http://localhost/hmtif/?page_id=15', 0, 'page', '', 0),
+(16, 1, '2021-04-03 10:22:31', '2021-04-03 10:22:31', '', 'Akademik', '', 'inherit', 'closed', 'closed', '', '15-revision-v1', '', '', '2021-04-03 10:22:31', '2021-04-03 10:22:31', '', 15, 'http://localhost/hmtif/2021/04/03/15-revision-v1/', 0, 'revision', '', 0),
+(17, 1, '2021-04-03 10:22:49', '2021-04-03 10:22:49', '', 'Galeri', '', 'publish', 'closed', 'closed', '', 'galeri', '', '', '2021-04-03 10:22:50', '2021-04-03 10:22:50', '', 0, 'http://localhost/hmtif/?page_id=17', 0, 'page', '', 0),
+(18, 1, '2021-04-03 10:22:49', '2021-04-03 10:22:49', '', 'Galeri', '', 'inherit', 'closed', 'closed', '', '17-revision-v1', '', '', '2021-04-03 10:22:49', '2021-04-03 10:22:49', '', 17, 'http://localhost/hmtif/2021/04/03/17-revision-v1/', 0, 'revision', '', 0),
+(19, 1, '2021-04-03 10:23:04', '2021-04-03 10:23:04', '', 'Berita', '', 'publish', 'closed', 'closed', '', 'berita', '', '', '2021-04-03 10:23:06', '2021-04-03 10:23:06', '', 0, 'http://localhost/hmtif/?page_id=19', 0, 'page', '', 0),
+(20, 1, '2021-04-03 10:23:04', '2021-04-03 10:23:04', '', 'Berita', '', 'inherit', 'closed', 'closed', '', '19-revision-v1', '', '', '2021-04-03 10:23:04', '2021-04-03 10:23:04', '', 19, 'http://localhost/hmtif/2021/04/03/19-revision-v1/', 0, 'revision', '', 0),
+(26, 1, '2021-04-03 10:27:21', '2021-04-03 10:27:21', '<img width=\"80\" height=\"80\" src=\"http://localhost/hmtif/wp-content/uploads/2021/04/Rectangle-1.png\" alt=\"logo\" loading=\"lazy\" />', 'Elementor #8', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2021-04-03 10:27:21', '2021-04-03 10:27:21', '', 8, 'http://localhost/hmtif/2021/04/03/8-revision-v1/', 0, 'revision', '', 0),
+(27, 1, '2021-04-03 10:27:21', '2021-04-03 10:27:21', '<img width=\"80\" height=\"80\" src=\"http://localhost/hmtif/wp-content/uploads/2021/04/Rectangle-1.png\" alt=\"logo\" loading=\"lazy\" />', 'Elementor #8', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2021-04-03 10:27:21', '2021-04-03 10:27:21', '', 8, 'http://localhost/hmtif/2021/04/03/8-revision-v1/', 0, 'revision', '', 0),
+(28, 1, '2021-04-03 10:27:22', '2021-04-03 10:27:22', '<img width=\"80\" height=\"80\" src=\"http://localhost/hmtif/wp-content/uploads/2021/04/Rectangle-1.png\" alt=\"logo\" loading=\"lazy\" />											\n				<nav data-toggle-icon=\"&lt;i aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;fas fa-align-justify&quot;&gt;&lt;/i&gt;\" data-close-icon=\"&lt;i aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;far fa-window-close&quot;&gt;&lt;/i&gt;\" data-full-width=\"yes\"><ul id=\"menu-1-87ac42c\"><li id=\"menu-item-21\"><a href=\"http://localhost/hmtif/\" class = \"hfe-menu-item\">Home</a></li>\n<li id=\"menu-item-25\"><a href=\"http://localhost/hmtif/profile/\" class = \"hfe-menu-item\">Profile</a></li>\n<li id=\"menu-item-24\"><a href=\"http://localhost/hmtif/akademik/\" class = \"hfe-menu-item\">Akademik</a></li>\n<li id=\"menu-item-23\"><a href=\"http://localhost/hmtif/galeri/\" class = \"hfe-menu-item\">Galeri</a></li>\n<li id=\"menu-item-22\"><a href=\"http://localhost/hmtif/berita/\" class = \"hfe-menu-item\">Berita</a></li>\n</ul></nav>', 'Elementor #8', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2021-04-03 10:27:22', '2021-04-03 10:27:22', '', 8, 'http://localhost/hmtif/2021/04/03/8-revision-v1/', 0, 'revision', '', 0),
+(29, 1, '2021-04-03 10:28:30', '2021-04-03 10:28:30', '<img width=\"80\" height=\"80\" src=\"http://localhost/hmtif/wp-content/uploads/2021/04/Rectangle-1.png\" alt=\"logo\" loading=\"lazy\" />											\n				<nav data-toggle-icon=\"&lt;i aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;fas fa-align-justify&quot;&gt;&lt;/i&gt;\" data-close-icon=\"&lt;i aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;far fa-window-close&quot;&gt;&lt;/i&gt;\" data-full-width=\"yes\"><ul id=\"menu-1-87ac42c\"><li id=\"menu-item-21\"><a href=\"http://localhost/hmtif/\" class = \"hfe-menu-item\">Home</a></li>\n<li id=\"menu-item-25\"><a href=\"http://localhost/hmtif/profile/\" class = \"hfe-menu-item\">Profile</a></li>\n<li id=\"menu-item-24\"><a href=\"http://localhost/hmtif/akademik/\" class = \"hfe-menu-item\">Akademik</a></li>\n<li id=\"menu-item-23\"><a href=\"http://localhost/hmtif/galeri/\" class = \"hfe-menu-item\">Galeri</a></li>\n<li id=\"menu-item-22\"><a href=\"http://localhost/hmtif/berita/\" class = \"hfe-menu-item\">Berita</a></li>\n</ul></nav>', 'Menu Utama', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2021-04-03 10:28:30', '2021-04-03 10:28:30', '', 8, 'http://localhost/hmtif/2021/04/03/8-revision-v1/', 0, 'revision', '', 0),
+(30, 1, '2021-04-03 10:35:50', '2021-04-03 10:35:50', 'http://localhost/hmtif/wp-content/uploads/2021/04/cropped-Rectangle-1.png', 'cropped-Rectangle-1.png', '', 'inherit', 'open', 'closed', '', 'cropped-rectangle-1-png', '', '', '2021-04-03 10:35:50', '2021-04-03 10:35:50', '', 0, 'http://localhost/hmtif/wp-content/uploads/2021/04/cropped-Rectangle-1.png', 0, 'attachment', 'image/png', 0),
+(31, 1, '2021-04-03 10:36:18', '0000-00-00 00:00:00', '{\n    \"page-builder-framework::custom_logo\": {\n        \"value\": 30,\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:36:18\"\n    },\n    \"page-builder-framework::pre_header_layout\": {\n        \"value\": \"none\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:36:18\"\n    },\n    \"page-builder-framework::menu_logo_container_width\": {\n        \"value\": \"25\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:36:18\"\n    },\n    \"page-builder-framework::mobile_menu_logo_container_width\": {\n        \"value\": \"66\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:36:18\"\n    },\n    \"page-builder-framework::sub_menu_width\": {\n        \"value\": \"294\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:36:18\"\n    },\n    \"page-builder-framework::mobile_menu_height\": {\n        \"value\": \"20\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:36:18\"\n    }\n}', '', '', 'auto-draft', 'closed', 'closed', '', '612545b4-799e-485d-b53e-8d8f4e939a37', '', '', '2021-04-03 10:36:18', '0000-00-00 00:00:00', '', 0, 'http://localhost/hmtif/?p=31', 0, 'customize_changeset', '', 0),
+(32, 1, '2021-04-03 10:37:16', '0000-00-00 00:00:00', '', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2021-04-03 10:37:16', '0000-00-00 00:00:00', '', 0, 'http://localhost/hmtif/?p=32', 1, 'nav_menu_item', '', 0),
+(33, 1, '2021-04-03 10:38:10', '2021-04-03 10:38:10', '', 'Home', '', 'publish', 'closed', 'closed', '', 'home', '', '', '2021-04-03 10:38:10', '2021-04-03 10:38:10', '', 0, 'http://localhost/hmtif/?p=33', 1, 'nav_menu_item', '', 0),
+(34, 1, '2021-04-03 10:38:11', '2021-04-03 10:38:11', ' ', '', '', 'publish', 'closed', 'closed', '', '34', '', '', '2021-04-03 10:38:11', '2021-04-03 10:38:11', '', 0, 'http://localhost/hmtif/?p=34', 5, 'nav_menu_item', '', 0),
+(35, 1, '2021-04-03 10:38:11', '2021-04-03 10:38:11', ' ', '', '', 'publish', 'closed', 'closed', '', '35', '', '', '2021-04-03 10:38:11', '2021-04-03 10:38:11', '', 0, 'http://localhost/hmtif/?p=35', 4, 'nav_menu_item', '', 0),
+(36, 1, '2021-04-03 10:38:10', '2021-04-03 10:38:10', ' ', '', '', 'publish', 'closed', 'closed', '', '36', '', '', '2021-04-03 10:38:10', '2021-04-03 10:38:10', '', 0, 'http://localhost/hmtif/?p=36', 3, 'nav_menu_item', '', 0),
+(37, 1, '2021-04-03 10:38:10', '2021-04-03 10:38:10', ' ', '', '', 'publish', 'closed', 'closed', '', '37', '', '', '2021-04-03 10:38:10', '2021-04-03 10:38:10', '', 0, 'http://localhost/hmtif/?p=37', 2, 'nav_menu_item', '', 0),
+(38, 1, '2021-04-03 10:37:39', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2021-04-03 10:37:39', '0000-00-00 00:00:00', '', 0, 'http://localhost/hmtif/?p=38', 1, 'nav_menu_item', '', 0),
+(39, 1, '2021-04-03 10:41:23', '2021-04-03 10:41:23', '{\n    \"page-builder-framework::custom_logo\": {\n        \"value\": 9,\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:39:43\"\n    },\n    \"page-builder-framework::menu_logo_size\": {\n        \"value\": \"{\\\"desktop\\\":\\\"40\\\"}\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:39:43\"\n    },\n    \"page-builder-framework::menu_logo_container_width\": {\n        \"value\": \"10\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:39:43\"\n    },\n    \"page-builder-framework::mobile_menu_logo_container_width\": {\n        \"value\": \"67\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:39:43\"\n    },\n    \"page-builder-framework::pre_header_layout\": {\n        \"value\": \"none\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:40:42\"\n    },\n    \"page-builder-framework::menu_height\": {\n        \"value\": \"20\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:40:42\"\n    },\n    \"page-builder-framework::menu_bg_color\": {\n        \"value\": \"#ffffff\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:40:42\"\n    },\n    \"page-builder-framework::menu_font_color\": {\n        \"value\": \"rgba(0,0,0,0.48)\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:41:23\"\n    },\n    \"page-builder-framework::menu_font_color_alt\": {\n        \"value\": \"#000000\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:40:42\"\n    },\n    \"page-builder-framework::sub_menu_width\": {\n        \"value\": \"198\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:40:42\"\n    },\n    \"page-builder-framework::sub_menu_accent_color\": {\n        \"value\": \"#ffffff\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:40:42\"\n    },\n    \"page-builder-framework::menu_padding\": {\n        \"value\": \"20\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:41:23\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '4d495750-3e90-4446-ac74-7a28c6f0deef', '', '', '2021-04-03 10:41:23', '2021-04-03 10:41:23', '', 0, 'http://localhost/hmtif/?p=39', 0, 'customize_changeset', '', 0),
+(40, 1, '2021-04-03 10:47:34', '2021-04-03 10:47:34', '{\n    \"page-builder-framework::menu_font_family_toggle\": {\n        \"value\": true,\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:47:34\"\n    },\n    \"page-builder-framework::menu_font_family\": {\n        \"value\": {\n            \"font-family\": \"Open Sans\",\n            \"variant\": \"regular\",\n            \"font-backup\": \"\",\n            \"font-weight\": \"400\",\n            \"font-style\": \"normal\"\n        },\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2021-04-03 10:47:34\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '876208c9-f37d-4f68-9542-232dcbecb698', '', '', '2021-04-03 10:47:34', '2021-04-03 10:47:34', '', 0, 'http://localhost/hmtif/2021/04/03/876208c9-f37d-4f68-9542-232dcbecb698/', 0, 'customize_changeset', '', 0),
+(42, 1, '2021-04-03 10:57:15', '2021-04-03 10:57:15', '', 'kahim 20/21', '', 'inherit', 'open', 'closed', '', 'kahim-1', '', '', '2021-04-03 10:57:38', '2021-04-03 10:57:38', '', 6, 'http://localhost/hmtif/wp-content/uploads/2021/04/kahim-1.png', 0, 'attachment', 'image/png', 0),
+(43, 1, '2021-04-03 11:10:49', '2021-04-03 11:10:49', '', 'email', '', 'inherit', 'open', 'closed', '', 'vector', '', '', '2021-04-03 11:10:57', '2021-04-03 11:10:57', '', 6, 'http://localhost/hmtif/wp-content/uploads/2021/04/Vector.svg', 0, 'attachment', 'image/svg+xml', 0),
+(44, 1, '2021-04-03 11:15:41', '2021-04-03 11:15:41', '', 'Home', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2021-04-03 11:15:41', '2021-04-03 11:15:41', '', 6, 'http://localhost/hmtif/2021/04/03/6-revision-v1/', 0, 'revision', '', 0),
+(45, 1, '2021-04-03 11:15:41', '2021-04-03 11:15:41', '', 'Home', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2021-04-03 11:15:41', '2021-04-03 11:15:41', '', 6, 'http://localhost/hmtif/2021/04/03/6-revision-v1/', 0, 'revision', '', 0),
+(46, 1, '2021-04-03 11:15:41', '2021-04-03 11:15:41', '<h2>Home Visi &amp; Misi Kabinet</h2>		\n			<h1>NOTRE<br>DAME.</h1>		\n			<h3>HIMPUNAN MAHASISWA TEKNIK INFORMATIKA UNIVERSITAS PASUNDAN</h3>		\n			<p>Himpunan Mahasiswa Teknik Informatika Universitas Pasundan Disingkat (HMTIF – UNPAS), berdiri pada tanggal 30 September 1993 bertempat di lingkungan Fakultas Teknik Program Studi Teknik Informatika Universitas Pasundan Bandung</p>		\n										<img width=\"150\" height=\"150\" src=\"http://localhost/hmtif/wp-content/uploads/2021/04/kahim-1-150x150.png\" alt=\"kahim 20/21\" loading=\"lazy\" />											\n			<p>Proker &amp; Agenda<br>100</p>		\n			<p>Anggota Pengurus<br>100</p>		\n			<h2>____________________________________________</h2>		\n			<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"21\" height=\"17\" viewBox=\"0 0 21 17\" fill=\"none\"><path d=\"M17.7917 0.166656H3.20837C2.37957 0.166656 1.58472 0.495897 0.998666 1.08195C0.412614 1.668 0.083374 2.46285 0.083374 3.29166V13.7083C0.083374 14.5371 0.412614 15.332 0.998666 15.918C1.58472 16.5041 2.37957 16.8333 3.20837 16.8333H17.7917C18.6205 16.8333 19.4154 16.5041 20.0014 15.918C20.5875 15.332 20.9167 14.5371 20.9167 13.7083V3.29166C20.9167 2.46285 20.5875 1.668 20.0014 1.08195C19.4154 0.495897 18.6205 0.166656 17.7917 0.166656ZM17.3646 2.24999L11.2396 8.37499C11.1428 8.47262 11.0276 8.55012 10.9006 8.603C10.7737 8.65588 10.6376 8.68311 10.5 8.68311C10.3625 8.68311 10.2264 8.65588 10.0994 8.603C9.9725 8.55012 9.85729 8.47262 9.76046 8.37499L3.63546 2.24999H17.3646ZM18.8334 13.7083C18.8334 13.9846 18.7236 14.2495 18.5283 14.4449C18.3329 14.6402 18.068 14.75 17.7917 14.75H3.20837C2.93211 14.75 2.66716 14.6402 2.4718 14.4449C2.27645 14.2495 2.16671 13.9846 2.16671 13.7083V3.71874L8.29171 9.84374C8.87765 10.4289 9.67191 10.7577 10.5 10.7577C11.3282 10.7577 12.1224 10.4289 12.7084 9.84374L18.8334 3.71874V13.7083Z\" fill=\"black\"></path></svg>', 'Home', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2021-04-03 11:15:41', '2021-04-03 11:15:41', '', 6, 'http://localhost/hmtif/2021/04/03/6-revision-v1/', 0, 'revision', '', 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wp_termmeta`
+-- Struktur dari tabel `wp_termmeta`
 --
 
 CREATE TABLE `wp_termmeta` (
@@ -375,7 +588,7 @@ CREATE TABLE `wp_termmeta` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wp_terms`
+-- Struktur dari tabel `wp_terms`
 --
 
 CREATE TABLE `wp_terms` (
@@ -386,16 +599,17 @@ CREATE TABLE `wp_terms` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `wp_terms`
+-- Dumping data untuk tabel `wp_terms`
 --
 
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
-(1, 'Uncategorized', 'uncategorized', 0);
+(1, 'Uncategorized', 'uncategorized', 0),
+(3, 'Navbar', 'navbar', 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wp_term_relationships`
+-- Struktur dari tabel `wp_term_relationships`
 --
 
 CREATE TABLE `wp_term_relationships` (
@@ -405,16 +619,21 @@ CREATE TABLE `wp_term_relationships` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `wp_term_relationships`
+-- Dumping data untuk tabel `wp_term_relationships`
 --
 
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
-(1, 1, 0);
+(1, 1, 0),
+(33, 3, 0),
+(34, 3, 0),
+(35, 3, 0),
+(36, 3, 0),
+(37, 3, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wp_term_taxonomy`
+-- Struktur dari tabel `wp_term_taxonomy`
 --
 
 CREATE TABLE `wp_term_taxonomy` (
@@ -427,16 +646,17 @@ CREATE TABLE `wp_term_taxonomy` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `wp_term_taxonomy`
+-- Dumping data untuk tabel `wp_term_taxonomy`
 --
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
-(1, 1, 'category', '', 0, 1);
+(1, 1, 'category', '', 0, 1),
+(3, 3, 'nav_menu', '', 0, 5);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wp_usermeta`
+-- Struktur dari tabel `wp_usermeta`
 --
 
 CREATE TABLE `wp_usermeta` (
@@ -447,7 +667,7 @@ CREATE TABLE `wp_usermeta` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `wp_usermeta`
+-- Dumping data untuk tabel `wp_usermeta`
 --
 
 INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
@@ -466,13 +686,21 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (13, 1, 'wp_user_level', '10'),
 (14, 1, 'dismissed_wp_pointers', ''),
 (15, 1, 'show_welcome_panel', '1'),
-(16, 1, 'session_tokens', 'a:1:{s:64:\"3992c2886cf47b391c7f0b0d7b16b65b31ab1ec69cedf23e327fb165e2d2c2f2\";a:4:{s:10:\"expiration\";i:1617614222;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36\";s:5:\"login\";i:1617441422;}}'),
-(17, 1, 'wp_dashboard_quick_press_last_post_id', '4');
+(16, 1, 'session_tokens', 'a:2:{s:64:\"3992c2886cf47b391c7f0b0d7b16b65b31ab1ec69cedf23e327fb165e2d2c2f2\";a:4:{s:10:\"expiration\";i:1617614222;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36\";s:5:\"login\";i:1617441422;}s:64:\"32dea02fbf3b9b344119db231367d2e4f0cde5b72a73bde3565e239965b67334\";a:4:{s:10:\"expiration\";i:1617617111;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36\";s:5:\"login\";i:1617444311;}}'),
+(17, 1, 'wp_dashboard_quick_press_last_post_id', '4'),
+(18, 1, 'closedpostboxes_page', 'a:1:{i:0;s:12:\"wpbf_sidebar\";}'),
+(19, 1, 'metaboxhidden_page', 'a:0:{}'),
+(20, 1, 'elementor_introduction', 'a:1:{s:10:\"rightClick\";b:1;}'),
+(21, 1, 'wp_user-settings', 'libraryContent=browse'),
+(22, 1, 'wp_user-settings-time', '1617445183'),
+(23, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:\"link-target\";i:1;s:11:\"css-classes\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";i:4;s:15:\"title-attribute\";}'),
+(24, 1, 'metaboxhidden_nav-menus', 'a:2:{i:0;s:28:\"add-post-type-e-landing-page\";i:1;s:12:\"add-post_tag\";}'),
+(25, 1, 'nav_menu_recently_edited', '3');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wp_users`
+-- Struktur dari tabel `wp_users`
 --
 
 CREATE TABLE `wp_users` (
@@ -489,7 +717,7 @@ CREATE TABLE `wp_users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `wp_users`
+-- Dumping data untuk tabel `wp_users`
 --
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
@@ -500,7 +728,7 @@ INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_
 --
 
 --
--- Indexes for table `wp_commentmeta`
+-- Indeks untuk tabel `wp_commentmeta`
 --
 ALTER TABLE `wp_commentmeta`
   ADD PRIMARY KEY (`meta_id`),
@@ -508,7 +736,7 @@ ALTER TABLE `wp_commentmeta`
   ADD KEY `meta_key` (`meta_key`(191));
 
 --
--- Indexes for table `wp_comments`
+-- Indeks untuk tabel `wp_comments`
 --
 ALTER TABLE `wp_comments`
   ADD PRIMARY KEY (`comment_ID`),
@@ -519,14 +747,14 @@ ALTER TABLE `wp_comments`
   ADD KEY `comment_author_email` (`comment_author_email`(10));
 
 --
--- Indexes for table `wp_links`
+-- Indeks untuk tabel `wp_links`
 --
 ALTER TABLE `wp_links`
   ADD PRIMARY KEY (`link_id`),
   ADD KEY `link_visible` (`link_visible`);
 
 --
--- Indexes for table `wp_options`
+-- Indeks untuk tabel `wp_options`
 --
 ALTER TABLE `wp_options`
   ADD PRIMARY KEY (`option_id`),
@@ -534,7 +762,7 @@ ALTER TABLE `wp_options`
   ADD KEY `autoload` (`autoload`);
 
 --
--- Indexes for table `wp_postmeta`
+-- Indeks untuk tabel `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
   ADD PRIMARY KEY (`meta_id`),
@@ -542,7 +770,7 @@ ALTER TABLE `wp_postmeta`
   ADD KEY `meta_key` (`meta_key`(191));
 
 --
--- Indexes for table `wp_posts`
+-- Indeks untuk tabel `wp_posts`
 --
 ALTER TABLE `wp_posts`
   ADD PRIMARY KEY (`ID`),
@@ -552,7 +780,7 @@ ALTER TABLE `wp_posts`
   ADD KEY `post_author` (`post_author`);
 
 --
--- Indexes for table `wp_termmeta`
+-- Indeks untuk tabel `wp_termmeta`
 --
 ALTER TABLE `wp_termmeta`
   ADD PRIMARY KEY (`meta_id`),
@@ -560,7 +788,7 @@ ALTER TABLE `wp_termmeta`
   ADD KEY `meta_key` (`meta_key`(191));
 
 --
--- Indexes for table `wp_terms`
+-- Indeks untuk tabel `wp_terms`
 --
 ALTER TABLE `wp_terms`
   ADD PRIMARY KEY (`term_id`),
@@ -568,14 +796,14 @@ ALTER TABLE `wp_terms`
   ADD KEY `name` (`name`(191));
 
 --
--- Indexes for table `wp_term_relationships`
+-- Indeks untuk tabel `wp_term_relationships`
 --
 ALTER TABLE `wp_term_relationships`
   ADD PRIMARY KEY (`object_id`,`term_taxonomy_id`),
   ADD KEY `term_taxonomy_id` (`term_taxonomy_id`);
 
 --
--- Indexes for table `wp_term_taxonomy`
+-- Indeks untuk tabel `wp_term_taxonomy`
 --
 ALTER TABLE `wp_term_taxonomy`
   ADD PRIMARY KEY (`term_taxonomy_id`),
@@ -583,7 +811,7 @@ ALTER TABLE `wp_term_taxonomy`
   ADD KEY `taxonomy` (`taxonomy`);
 
 --
--- Indexes for table `wp_usermeta`
+-- Indeks untuk tabel `wp_usermeta`
 --
 ALTER TABLE `wp_usermeta`
   ADD PRIMARY KEY (`umeta_id`),
@@ -591,7 +819,7 @@ ALTER TABLE `wp_usermeta`
   ADD KEY `meta_key` (`meta_key`(191));
 
 --
--- Indexes for table `wp_users`
+-- Indeks untuk tabel `wp_users`
 --
 ALTER TABLE `wp_users`
   ADD PRIMARY KEY (`ID`),
@@ -600,71 +828,71 @@ ALTER TABLE `wp_users`
   ADD KEY `user_email` (`user_email`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `wp_commentmeta`
+-- AUTO_INCREMENT untuk tabel `wp_commentmeta`
 --
 ALTER TABLE `wp_commentmeta`
   MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `wp_comments`
+-- AUTO_INCREMENT untuk tabel `wp_comments`
 --
 ALTER TABLE `wp_comments`
   MODIFY `comment_ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `wp_links`
+-- AUTO_INCREMENT untuk tabel `wp_links`
 --
 ALTER TABLE `wp_links`
   MODIFY `link_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `wp_options`
+-- AUTO_INCREMENT untuk tabel `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=192;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=209;
 
 --
--- AUTO_INCREMENT for table `wp_postmeta`
+-- AUTO_INCREMENT untuk tabel `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=230;
 
 --
--- AUTO_INCREMENT for table `wp_posts`
+-- AUTO_INCREMENT untuk tabel `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
--- AUTO_INCREMENT for table `wp_termmeta`
+-- AUTO_INCREMENT untuk tabel `wp_termmeta`
 --
 ALTER TABLE `wp_termmeta`
   MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `wp_terms`
+-- AUTO_INCREMENT untuk tabel `wp_terms`
 --
 ALTER TABLE `wp_terms`
-  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `wp_term_taxonomy`
+-- AUTO_INCREMENT untuk tabel `wp_term_taxonomy`
 --
 ALTER TABLE `wp_term_taxonomy`
-  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `wp_usermeta`
+-- AUTO_INCREMENT untuk tabel `wp_usermeta`
 --
 ALTER TABLE `wp_usermeta`
-  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
--- AUTO_INCREMENT for table `wp_users`
+-- AUTO_INCREMENT untuk tabel `wp_users`
 --
 ALTER TABLE `wp_users`
   MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
