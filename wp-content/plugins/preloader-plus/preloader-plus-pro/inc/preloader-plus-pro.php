@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Main Preloader Plus Pro plugin class/file.
  *
@@ -10,7 +11,8 @@ namespace Preloader_Plus_Pro;
 /**
  * Preloader Plus class, so we don't have to worry about namespaces.
  */
-class Preloader_Plus_Pro {
+class Preloader_Plus_Pro
+{
 	/**
 	 * The instance *Singleton* of this class
 	 *
@@ -23,8 +25,9 @@ class Preloader_Plus_Pro {
 	 *
 	 * @return Preloader_Plus_Pro the *Singleton* instance.
 	 */
-	public static function get_instance() {
-		if ( null === static::$instance ) {
+	public static function get_instance()
+	{
+		if (null === static::$instance) {
 			static::$instance = new static();
 		}
 
@@ -37,7 +40,8 @@ class Preloader_Plus_Pro {
 	 * Protected constructor to prevent creating a new instance of the
 	 * *Singleton* via the `new` operator from outside of this class.
 	 */
-	protected function __construct() {
+	protected function __construct()
+	{
 		// Loads files
 		require_once PRELOADER_PLUS_PRO_PATH . 'inc/customizer.php';
 	}
@@ -48,7 +52,9 @@ class Preloader_Plus_Pro {
 	 *
 	 * @return void
 	 */
-	private function __clone() {}
+	private function __clone()
+	{
+	}
 
 
 	/**
@@ -56,7 +62,9 @@ class Preloader_Plus_Pro {
 	 *
 	 * @return void
 	 */
-	private function __wakeup() {}
+	public function __wakeup()
+	{
+	}
 
 
 	/**
@@ -64,16 +72,13 @@ class Preloader_Plus_Pro {
 	 *
 	 * @since 1.0
 	 */
-	 public function get_options() {
-		 // Get preloader options.
-	 	$preloader_plus_settings = wp_parse_args(
-	 		get_option( 'preloader_plus_settings', array() ),
-	 		preloader_plus_get_default()
-	 	);
+	public function get_options()
+	{
+		// Get preloader options.
+		$preloader_plus_settings = wp_parse_args(
+			get_option('preloader_plus_settings', array()),
+			preloader_plus_get_default()
+		);
 		return $preloader_plus_settings;
 	}
-
-
-
-
 }
